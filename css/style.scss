@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap&subset=latin-ext");
+
+$background-color: #474550;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*:focus {
+	box-shadow: none;
+}
+
+body,
+html {
+	font-family: "Roboto", sans-serif;
+	color: white;
+	margin: 0;
+	font-size: 10px;
+	scroll-behavior: smooth;
+	background-color: $background-color;
+}
+
+
+@media (orientation: portrait) {
+}
+
+@media (min-width: 200px) {
+}
+
+@media (min-width: 300px) {
+}
+
+@media (min-width: 400px) {
+}
+
+@media (min-width: 450px) {
+}
+
+@media (min-width: 500px) {
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
