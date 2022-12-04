@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap&subset=latin-ext");
 
 $background-color: #474550;
+$text-color: #26a80c;
+$nav-hover-color: #55f335;
+$font-size: 10px;
+
 
 *,
 *::before,
@@ -19,9 +23,37 @@ html {
 	font-family: "Roboto", sans-serif;
 	color: white;
 	margin: 0;
-	font-size: 10px;
+	font-size: $font-size;
 	scroll-behavior: smooth;
 	background-color: $background-color;
+}
+
+.nav {
+	height: 20px;
+	background-color: #333;
+	text-align: center;
+	line-height: 20px;
+	font-size: 0px;
+}
+
+.nav-item {
+	display: inline-block;
+
+}
+
+.nav-item a {
+	color: #fff;
+	padding: 0 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 0.8 * $font-size;
+	font-weight: bold;
+	letter-spacing: 2px;
+	transition: color .2s;
+}
+
+.nav-item a:hover {
+	color: $nav-hover-color;
 }
 
 
