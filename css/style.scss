@@ -137,6 +137,26 @@ main {
 	text-align: justify;
 }
 
+/* offer */
+
+.offers-info {
+	text-align: center;
+}
+.offer {
+	display: block;
+	margin-top: 30px;
+	color: #fff;
+	font-size: 30px;
+	color: $nav-hover-color;
+	text-align: center;
+}
+.offer-title {
+	display: block;
+	color: #fff;
+	color: $nav-hover-color;
+	text-align: center;
+}
+
 /* footer */
 
 .footer {

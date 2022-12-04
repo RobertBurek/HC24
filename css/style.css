@@ -125,6 +125,27 @@ main {
   text-align: justify;
 }
 
+/* offer */
+.offers-info {
+  text-align: center;
+}
+
+.offer {
+  display: block;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 30px;
+  color: #55f335;
+  text-align: center;
+}
+
+.offer-title {
+  display: block;
+  color: #fff;
+  color: #55f335;
+  text-align: center;
+}
+
 /* footer */
 .footer {
   background-color: #fff;
