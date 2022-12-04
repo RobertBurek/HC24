@@ -23,6 +23,7 @@ html {
   background-color: #474550;
 }
 
+/* navigation */
 .nav {
   height: 20px;
   background-color: #333;
@@ -43,11 +44,51 @@ html {
   font-size: 8px;
   font-weight: bold;
   letter-spacing: 2px;
-  -webkit-transition: color .2s;
-  transition: color .2s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 .nav-item a:hover {
   color: #55f335;
+}
+
+/* header */
+.header-img {
+  position: relative;
+  height: 200px;
+  background-image: url("../img/warsaw_1920.jpg");
+  background-size: cover;
+  background-position: 0 40%;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: white;
+  z-index: 100;
+}
+
+.header-text h1 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+.header-text p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.header-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 3, 26, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
