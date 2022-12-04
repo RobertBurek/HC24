@@ -23,33 +23,39 @@ html {
   background-color: #474550;
 }
 
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
 /* navigation */
 .nav {
-  font-size: 0px;
   height: 20px;
+  line-height: 20px;
   background-color: #333;
   text-align: center;
+}
+
+.bars-icon {
+  display: block;
+  margin-left: auto;
   line-height: 20px;
-}
-
-.nav-item {
-  display: inline-block;
-}
-
-.nav-item a {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #fff;
-  padding: 0 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
+  padding: 0 20px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
-.nav-item a:hover {
+.bars-icon:hover {
   color: #55f335;
+}
+
+.nav-items {
+  display: none;
 }
 
 /* header */
@@ -58,6 +64,7 @@ html {
   height: 150px;
   background-image: url("../img/warsaw_1920.jpg");
   background-size: cover;
+  background-position: center;
   background-position: 0 30%;
 }
 
@@ -105,5 +112,28 @@ html {
   color: #474550;
   font-weight: 500;
   text-decoration: none;
+}
+
+@media (min-width: 500px) {
+  .bars-icon {
+    display: none;
+  }
+  .nav-items {
+    display: block;
+  }
+  .nav-items a {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    padding: 0 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+  .nav-items a:hover {
+    color: #55f335;
+  }
 }
 /*# sourceMappingURL=style.css.map */
