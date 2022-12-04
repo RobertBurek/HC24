@@ -101,9 +101,9 @@ html {
 	font-weight: bold;
 }
 
-.header-text span {
-	// color: $nav-hover-color;
-}
+// .header-text span {
+// color: $nav-hover-color;
+// }
 
 .header-text p {
 	font-size: 0.72rem;
@@ -116,6 +116,25 @@ html {
 	height: 100%;
 	width: 100%;
 	background-color: rgba(0, 3, 26, 0.5);
+}
+
+main {
+	margin: 40px 0px;
+}
+
+/* about-us */
+
+.section-title {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.about-info {
+	margin-bottom: 10px;
+	width: 80%;
+	margin-left: 10%;
+	text-align: justify;
 }
 
 /* footer */
