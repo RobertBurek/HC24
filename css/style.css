@@ -148,7 +148,12 @@ main {
 
 /* dropdown */
 .dropdown-btn {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: #55f335;
+  z-index: 500;
+  font-weight: bold;
 }
 
 .dropdown h3 {
@@ -158,7 +163,12 @@ main {
 }
 
 .dropdown-btn i {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+.dropdown-btn p {
+  font-size: 1.5rem;
+  margin-top: 5px;
 }
 
 .dropdown-box {
@@ -213,6 +223,19 @@ main {
   display: inline-block;
   margin-left: 20px;
   color: gray;
+}
+
+.info-list {
+  width: 170px;
+  position: relative;
+  left: 60%;
+  -webkit-transform: translate(-60%, 0);
+          transform: translate(-60%, 0);
+}
+
+.info-list p {
+  display: flow-root list-item;
+  text-align: left;
 }
 
 /* footer */
