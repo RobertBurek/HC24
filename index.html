@@ -22,7 +22,7 @@
                 <a href="#about">o nas</a>
                 <a href="#offers">oferty</a>
                 <a href="#">praca</a>
-                <a href="#">kotakt</a>
+                <a href="#contact">kotakt</a>
             </div>
         </div>
     </nav>
@@ -55,17 +55,85 @@
             <p class="offers-info">
                 Home Care 24 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
-            <a href="#" class="offer"><i class="fas fa-magnifying-glass"></i></a>
-            <h3 class="offer-title">Przeglądy</h3>
-            <a href="#" class="offer"><i class="fas fa-wand-magic-sparkles"></i></a>
-            <h3 class="offer-title">Konserwacja</h3>
-            <a href="#" class="offer"><i class="fas fa-gear"></i></a>
-            <h3 class="offer-title">Obsługa</h3>
-            <a href="#" class="offer"><i class="fas fa-screwdriver-wrench"></i></a>
-            <h3 class="offer-title">Naprawy</h3>
-            <a href="#" class="offer"><i class="fa-regular fa-eye"></i></a>
-            <h3 class="offer-title">Kontrola</h3>
+            <div class="dropdown-option">
+                <div class="dropdown-box">
+                    <button class="offer dropdown-btn">
+                        <i class="fas fa-magnifying-glass" dropdown></i>
+                        <p dropdown>Przeglądy</p>
+                    </button>
+                    <div class="dropdown-info">
+                        <p>przeglądy instalacyjne (wodne, kanalizacyjne, CO, śmietniki, itp.)</p>
+                        <p>przeglądy przewodów kominowych (dymowych, spalinowych, wentylacyjnych)</p>
+                        <p>przeglądy elektryczny wind</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="dropdown-box">
+                    <button class="offer dropdown-btn">
+                        <i class="fas fa-wand-magic-sparkles" dropdown></i>
+                        <p dropdown>Konserwacja</p>
+                    </button>
+                    <div class="dropdown-info">
+                        <p>konserwacja elektryczna</p>
+                        <p>konserwacja w zakresie ślusarki okiennej i drzwiowej</p>
+                    </div>
+                </div>
+                <div class="dropdown-box">
+                    <button class="offer dropdown-btn">
+                        <i class="fas fa-gear" dropdown></i>
+                        <p dropdown>Obsługa</p>
+                    </button>
+                    <div class="dropdown-info">
+                        <p>obsługa hydrauliki, węzłów cieplnych i kotłowni</p>
+                        <p>obsługa furtek i bram (wjazdowe, garażowe)</p>
+                        <p>obsługa systemów dozoru i monitoringu</p>
+                        <p>obsługa instalacji domofonowych i videodomofonowych</p>
+                    </div>
+                </div>
+                <div class="dropdown-box">
+                    <button class="offer dropdown-btn">
+                        <i class="fas fa-screwdriver-wrench" dropdown></i>
+                        <p dropdown>Naprawy</p>
+                    </button>
+                    <div class="dropdown-info">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium cu.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown-box">
+                    <button class="offer dropdown-btn">
+                        <i class="fa-regular fa-eye" dropdown></i>
+                        <p dropdown>Kontrola</p>
+                    </button>
+                    <div class="dropdown-info">
+                        <p>kontrola konstrukcji obiektu</p>
+                        <p>kontrola instalacji gazowej</p>
+                        <p>kontrola kotłowni/węzła</p>
+                        <p>kontrola detektorów gazu w garażu</p>
+                        <p>kontrola detektorów gazu w kotłowni</p>
+                        <p>kontrola instalacji elektrycznej</p>
+                        <p>kontrola instalacji i sprzętu ppoż</p>
+                    </div>
+                </div>
+            </div>
         </section>
+<br>
+<br>
+<br>
+            <section id="contact" class="container">
+                <h2 class="section-title">Kontakt</h2>
+                <div class="section-title">
+                    <h3>Nowoursynowska 145D / 96</h3>
+                    <h3>00-000 Warszawa</h3>
+                    <br>
+                    <h3>homecare.24@wp.pl</h3>
+                    <h3>+48 607 907 027</h6>
+                </div>
+            </section>
+
+
     </main>
     <footer id="footer" class="footer">
         <div class="footer-text">
@@ -75,7 +143,9 @@
         </div>
     </footer>
 
-
+    <script>
+        document.write('<script src="./js/dropdown.js?ver=' + Math.floor(Math.random() * 10000) + '" type="module"\><\/script>');
+    </script>
 </body>
 
 </html>
