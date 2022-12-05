@@ -187,14 +187,8 @@ main {
   text-align: left;
   border: none;
   background-color: #474550;
-  /* font-weight: 600; */
   letter-spacing: 0.5px;
   cursor: pointer;
-}
-
-.dropdown-btn:hover,
-.dropdown-btn:focus {
-  outline: none;
 }
 
 .dropdown-info {
