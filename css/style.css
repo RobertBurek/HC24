@@ -2,15 +2,13 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 *:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 body,
@@ -46,7 +44,6 @@ html {
   background: none;
   border: none;
   cursor: pointer;
-  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -71,8 +68,7 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: white;
   z-index: 100;
 }
@@ -116,6 +112,7 @@ main {
   margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
+  color: #55f335;
 }
 
 .about-info {
@@ -193,13 +190,8 @@ main {
 
 .dropdown-info {
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   display: none;
 }
 
@@ -223,13 +215,90 @@ main {
   width: 170px;
   position: relative;
   left: 60%;
-  -webkit-transform: translate(-60%, 0);
-          transform: translate(-60%, 0);
+  transform: translate(-60%, 0);
 }
 
 .info-list p {
   display: flow-root list-item;
   text-align: left;
+}
+
+/* form */
+.form {
+  height: 410px;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(25vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: 350px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.form h2,
+.form h3 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  border-bottom: 3px solid #78788c;
+}
+.form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+.form input:focus {
+  border-bottom: 2px solid #78788c;
+}
+.form p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+}
+.form button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #33df4a;
+  background: 0;
+  color: #55f335;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form button:hover {
+  background: #55f335;
+  color: #fff;
+  font-weight: bold;
+}
+.form div {
+  content: "Hi";
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+.form span {
+  margin: 0 5px 0 15px;
+}
+
+/* contact */
+.contact h3 {
+  color: white;
 }
 
 /* footer */
@@ -263,7 +332,6 @@ main {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    -webkit-transition: color 0.2s;
     transition: color 0.2s;
   }
   .nav-items a:hover {
@@ -286,7 +354,6 @@ main {
     font-size: 1.3rem;
   }
 }
-
 @media (min-width: 768px) {
   .nav {
     height: 4rem;
@@ -296,7 +363,6 @@ main {
     font-size: 1.2rem;
     padding: 2rem 3rem;
     letter-spacing: 2px;
-    -webkit-transition: color 0.2s;
     transition: color 0.2s;
   }
   .header {
@@ -315,5 +381,4 @@ main {
   .header-text p {
     font-size: 2.3rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
