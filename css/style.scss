@@ -240,7 +240,7 @@ main {
 /* form */
 
 .form {
-	height: 410px;
+	height: 390px;
 	// border-radius: 8px;
 	// box-shadow: 0 0 40px -10px #000;
 	// margin: calc(25vh - 220px) auto;
@@ -249,12 +249,14 @@ main {
 	// box-sizing: border-box;
 	// position: relative;
 
-	h2,
-	h3 {
+	h2 {
 		margin: 10px 0;
-		padding-bottom: 10px;
-		width: 180px;
-		border-bottom: 3px solid #78788c;
+		// padding-bottom: 10px;
+		// width: 180px;
+		// border-bottom: 3px solid #78788c;
+	}
+	h3 {
+		text-transform: none;
 	}
 	input {
 		width: 100%;
@@ -279,16 +281,18 @@ main {
 	button {
 		float: right;
 		padding: 8px 12px;
-		margin: 8px 0 0;
+		margin-top: 40px;
 		font-family: "Montserrat", sans-serif;
-		border: 2px solid #33df4a;
+		font-weight: bold;
+		border: 2px solid $text-color;
 		background: 0;
 		color: $nav-hover-color;
 		cursor: pointer;
 		transition: all 0.3s;
 	}
 	button:hover {
-		background: $nav-hover-color;
+		// background: $nav-hover-color;
+		background: #588c4d;
 		color: #fff;
 		font-weight: bold;
 	}

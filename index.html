@@ -129,12 +129,12 @@
         <section id="ask-offer" class="container shadow">
             <!-- <h2 class="section-title">Spytaj o ofertę</h2> -->
             <!-- <h3 class="section-title">To nic nie kosztuje</h3> -->
-            <form class="form">
+            <form class="form" action="./php/sendAsk.php" method="post">
                 <h2 class="section-title">Spytaj o ofertę</h2>
                 <h3 class="section-title">To nic nie kosztuje</h3>
-                <p type="Nazwisko i imię:"><input ></input></p>
-                <p type="Adres mailowy:"><input ></input></p>
-                <p type="Treść:"><input></input></p>
+                <p type="Nazwisko i imię:"><input name="nameSurname"></input></p>
+                <p type="Adres mailowy:"><input name="mailAdress"></input></p>
+                <p type="Treść:"><input name="contentMail"></input></p>
                 <button>Wyślij zapytanie</button>
             </form>
         </section>
