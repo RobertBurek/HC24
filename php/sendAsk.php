@@ -12,9 +12,9 @@ function sendInfoMail($nameInfo, $mailInfo, $contentInfo)
     $message_body = " " . $nameInfo . " wysłał/a zapytanie o ofertę.\n";
     $message_body .= "O treści: " . $contentInfo . " \n";
     $message_body .= "Odpowiedź odeślij na adres mailowy: " . $mailInfo . "\n";
-    $message_body .= "Info ze strony HC24.pl";
+    $message_body .= "Info ze strony http://robertburek.pl/HC24/";
     mail("robertburek@wp.pl", "Zapytanie od " . $nameInfo, $message_body, $headers);
 }
 
-header('Location: '.$_SERVER['HTTP_REFERER']);
+header('Location: '.$_SERVER['HTTP_REFERER'].'#form');
 sendInfoMail($name, $mail, $content);
