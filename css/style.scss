@@ -67,25 +67,45 @@ section {
 	max-width: 1200px;
 }
 
-.bars-icon {
-	display: block;
-	margin-left: auto;
-	line-height: $height-nav;
-	padding: 0 $height-nav;
-	color: $text-nav-color;
-	background: none;
-	border: none;
-	cursor: pointer;
-	transition: color 0.2s;
-}
+// .bars-icon {
+// 	display: block;
+// 	margin-left: auto;
+// 	line-height: $height-nav;
+// 	padding: 0 $height-nav;
+// 	color: $text-nav-color;
+// 	background: none;
+// 	border: none;
+// 	cursor: pointer;
+// 	transition: color 0.2s;
+// }
 
-.bars-icon:hover {
-	color: $nav-hover-color;
-}
+// .bars-icon:hover {
+// 	color: $nav-hover-color;
+// }
 
-.nav-items {
-	display: none;
-}
+// .nav-items {
+// 	display: none;
+// }
+
+	.bars-icon {
+		display: none;
+	}
+	.nav-items {
+		display: block;
+	}
+	.nav-items a {
+		font-size: 0.8rem;
+		font-weight: bold;
+		color: $text-nav-color;
+		padding: 0 7px;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 2px;
+		transition: color 0.2s;
+	}
+	.nav-items a:hover {
+		color: $nav-hover-color;
+	}
 
 /* header */
 
@@ -353,6 +373,9 @@ main {
 }
 
 @media (min-width: 400px) {
+	.nav-items a {
+		padding: 0 15px;
+	}
 	.form {
 		button {
 			margin-top: 40px;
@@ -372,25 +395,25 @@ main {
 }
 
 @media (min-width: 500px) {
-	.bars-icon {
-		display: none;
-	}
-	.nav-items {
-		display: block;
-	}
-	.nav-items a {
-		font-size: 0.8rem;
-		font-weight: bold;
-		color: $text-nav-color;
-		padding: 0 15px;
-		text-transform: uppercase;
-		text-decoration: none;
-		letter-spacing: 2px;
-		transition: color 0.2s;
-	}
-	.nav-items a:hover {
-		color: $nav-hover-color;
-	}
+	// .bars-icon {
+	// 	display: none;
+	// }
+	// .nav-items {
+	// 	display: block;
+	// }
+	// .nav-items a {
+	// 	font-size: 0.8rem;
+	// 	font-weight: bold;
+	// 	color: $text-nav-color;
+	// 	padding: 0 15px;
+	// 	text-transform: uppercase;
+	// 	text-decoration: none;
+	// 	letter-spacing: 2px;
+	// 	transition: color 0.2s;
+	// }
+	// .nav-items a:hover {
+	// 	color: $nav-hover-color;
+	// }
 	.header {
 		height: 400px;
 		background-image: url("../img/warsaw_1920.jpg");
