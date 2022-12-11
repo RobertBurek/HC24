@@ -126,6 +126,7 @@ main {
   text-transform: uppercase;
   text-align: center;
   color: #55f335;
+  letter-spacing: 1px;
 }
 
 .about-info {
@@ -293,6 +294,7 @@ main {
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  letter-spacing: .7px;
 }
 
 .form button:hover {
@@ -333,6 +335,7 @@ main {
 .footer {
   background-color: #fff;
   text-align: center;
+  padding: 2px 0px;
 }
 
 .footer-text {
