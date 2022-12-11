@@ -6,6 +6,7 @@ $text-nav-color: white;
 $nav-hover-color: #55f335;
 $font-size: 10px;
 $height-nav: 20px;
+$container-margin: 25px;
 
 *,
 *::before,
@@ -30,9 +31,13 @@ html {
 }
 
 .container {
-	margin: 25px auto;
+	margin: $container-margin auto;
 	width: 100%;
 	max-width: 1200px;
+}
+
+section {
+	scroll-margin-top: $height-nav + $container-margin;
 }
 
 .shadow {
@@ -48,10 +53,18 @@ html {
 /* navigation */
 
 .nav {
+	position: sticky;
+	top: 0;
 	height: $height-nav;
 	line-height: $height-nav;
 	background-color: #333;
 	text-align: center;
+	z-index: 1000;
+}
+
+.container-start {
+	width: 100%;
+	max-width: 1200px;
 }
 
 .bars-icon {

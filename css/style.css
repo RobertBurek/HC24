@@ -29,6 +29,10 @@ html {
   max-width: 1200px;
 }
 
+section {
+  scroll-margin-top: 45px;
+}
+
 .shadow {
   border-radius: 8px;
   -webkit-box-shadow: 0 0 40px -10px #000;
@@ -40,10 +44,19 @@ html {
 
 /* navigation */
 .nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   height: 20px;
   line-height: 20px;
   background-color: #333;
   text-align: center;
+  z-index: 1000;
+}
+
+.container-start {
+  width: 100%;
+  max-width: 1200px;
 }
 
 .bars-icon {
