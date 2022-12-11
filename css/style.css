@@ -2,13 +2,15 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 *:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 body,
@@ -29,7 +31,8 @@ html {
 
 .shadow {
   border-radius: 8px;
-  box-shadow: 0 0 40px -10px #000;
+  -webkit-box-shadow: 0 0 40px -10px #000;
+          box-shadow: 0 0 40px -10px #000;
   padding: 20px 30px;
   width: 80%;
   max-width: 400px;
@@ -52,6 +55,7 @@ html {
   background: none;
   border: none;
   cursor: pointer;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -76,7 +80,8 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: white;
   z-index: 100;
 }
@@ -198,8 +203,13 @@ main {
 
 .dropdown-info {
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: none;
 }
 
@@ -223,7 +233,8 @@ main {
   width: 170px;
   position: relative;
   left: 60%;
-  transform: translate(-60%, 0);
+  -webkit-transform: translate(-60%, 0);
+          transform: translate(-60%, 0);
 }
 
 .info-list p {
@@ -235,62 +246,80 @@ main {
 .form {
   height: 390px;
 }
+
 .form h2 {
   margin: 10px 0;
 }
+
 .form h3 {
   text-transform: none;
 }
+
 .form input {
   width: 100%;
   padding: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: none;
   outline: none;
   resize: none;
   border: 0;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-bottom: 2px solid #bebed2;
   text-align: center;
   margin-bottom: 5px;
   color: #4ad393;
 }
+
 .form input:focus {
   border-bottom: 2px solid #78788c;
 }
+
 .form p {
   text-align: center;
   font-size: 1.2rem;
   margin-top: 10px;
 }
+
 .form button {
   float: right;
   padding: 8px 12px;
   margin-top: 30px;
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   border: 2px solid #26a80c;
   background: 0;
   color: #55f335;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .form button:hover {
   background: #588c4d;
   color: #fff;
   font-weight: bold;
 }
+
 .form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 .form div p {
   margin: 0px 5px;
   width: 40%;
 }
+
 .form div p:first-child {
   width: 60%;
 }
+
 .form span {
   margin: 0 5px 0 15px;
 }
@@ -327,6 +356,7 @@ main {
     width: 65%;
   }
 }
+
 @media (min-width: 500px) {
   .bars-icon {
     display: none;
@@ -342,6 +372,7 @@ main {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
   }
   .nav-items a:hover {
@@ -367,6 +398,7 @@ main {
     margin: 0px 20px;
   }
 }
+
 @media (min-width: 768px) {
   .nav {
     height: 4rem;
@@ -376,6 +408,7 @@ main {
     font-size: 1.2rem;
     padding: 2rem 3rem;
     letter-spacing: 2px;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
   }
   .header {
@@ -394,4 +427,5 @@ main {
   .header-text p {
     font-size: 2.3rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
