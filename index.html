@@ -132,9 +132,13 @@
             <form id="form" class="form" action="./php/sendAsk.php" method="post">
                 <h2 class="section-title">Spytaj o ofertę</h2>
                 <h3 class="section-title">To nic nie kosztuje</h3>
-                <p type="Nazwisko i imię:"><input name="nameSurname"></input></p>
-                <p type="Adres mailowy:"><input name="mailAdress"></input></p>
-                <p type="Treść:"><input name="contentMail"></input></p>
+                <p><input name="nameSurname"></input>Imię i nazwisko</p>
+                <p><input name="mailAdress"></input>Adres mailowy</p>
+                <div>
+                    <p><input name="totalSurface"></input>Powierzchnia całkowita [m<sup>2</sup>]</p>
+                    <p><input name="numberApartments"></input>Ilość lokali [szt]<sup></sup></p>
+                </div>
+                <p><input name="contentMail"></input>Treść zapytania</p>
                 <button>Wyślij zapytanie</button>
             </form>
         </section>

@@ -268,20 +268,29 @@ main {
 		border: 0;
 		transition: all 0.3s;
 		border-bottom: 2px solid #bebed2;
+		text-align: center;
+		margin-bottom: 5px;
+		color: #4ad393;
 	}
 	input:focus {
 		border-bottom: 2px solid #78788c;
+		// margin-bottom: 2px;
 	}
-	p:before {
-		content: attr(type);
-		display: block;
-		margin: 28px 0 0;
-		font-size: 14px;
+	// p:before {
+	// 	content: attr(type);
+	// 	display: block;
+	// 	margin: 28px 0 0;
+	// 	font-size: 14px;
+	// }
+	p {
+		text-align: center;
+		font-size: 1.2rem;
+		margin-top: 10px;
 	}
 	button {
 		float: right;
 		padding: 8px 12px;
-		margin-top: 40px;
+		margin-top: 30px;
 		font-family: "Montserrat", sans-serif;
 		font-weight: bold;
 		border: 2px solid $text-color;
@@ -297,17 +306,28 @@ main {
 		font-weight: bold;
 	}
 	div {
+		display: flex;
+		flex-direction: row;
 		// content: "Hi";
-		position: absolute;
-		bottom: -15px;
-		right: -20px;
-		background: #50505a;
-		color: #fff;
-		width: 320px;
-		padding: 16px 4px 16px 0;
-		border-radius: 6px;
-		font-size: 13px;
-		box-shadow: 10px 10px 40px -14px #000;
+		// 	position: absolute;
+		// 	bottom: -15px;
+		// 	right: -20px;
+		// 	background: #50505a;
+		// 	color: #fff;
+		// 	width: 320px;
+		// 	padding: 16px 4px 16px 0;
+		// 	border-radius: 6px;
+		// 	font-size: 13px;
+		// 	box-shadow: 10px 10px 40px -14px #000;
+		p {
+			margin: 0px 5px;
+			width: 40%;
+			// font-size: 1.2rem;
+			// margin-top: 10px;
+		}
+		p:first-child {
+			width: 60%;
+		}
 	}
 	span {
 		margin: 0 5px 0 15px;
@@ -343,6 +363,19 @@ main {
 }
 
 @media (min-width: 400px) {
+	.form {
+		button {
+			margin-top: 40px;
+		}
+		div {
+			p {
+				width: 35%;
+			}
+			p:first-child {
+				width: 65%;
+			}
+		}
+	}
 }
 
 @media (min-width: 450px) {
@@ -383,6 +416,15 @@ main {
 	}
 	.header-text p {
 		font-size: 1.3rem;
+	}
+	.form {
+		div {
+			p {
+				margin: 0px 20px;
+			}
+			p:first-child {
+			}
+		}
 	}
 }
 
