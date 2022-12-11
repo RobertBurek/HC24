@@ -195,8 +195,12 @@ main {
 	margin: 10px;
 	text-align: center;
 }
+.dropdown-box:hover button {
+	transform: scale(1.2);
+}
 .dropdown-box button {
 	text-align: center;
+	transition: transform 0.3s;
 }
 .dropdown-btn {
 	padding: 5px;
@@ -241,7 +245,7 @@ main {
 /* form */
 
 .form {
-	height: 390px;
+	height: 400px;
 
 	h2 {
 		margin: 10px 0;
@@ -275,13 +279,14 @@ main {
 		float: right;
 		padding: 8px 12px;
 		margin-top: 30px;
+		font-size: 1.1rem;
 		font-weight: bold;
 		border: 2px solid $text-color;
 		background: 0;
 		color: $nav-hover-color;
 		cursor: pointer;
 		transition: all 0.3s;
-		letter-spacing: .7px;
+		letter-spacing: 0.7px;
 	}
 	button:hover {
 		background: #588c4d;
@@ -389,13 +394,27 @@ main {
 	.header-text p {
 		font-size: 1.3rem;
 	}
+	.info-list {
+		width: 210px;
+		left: 50%;
+		transform: translate(-40%, 0);
+	}
+	.info-list p {
+		font-size: 1.2rem;
+	}
 	.form {
+		p {
+			font-size: 1.3rem;
+		}
 		div {
 			p {
 				margin: 0px 20px;
 			}
 			p:first-child {
 			}
+		}
+		button {
+			font-size: 1.2rem;
 		}
 	}
 }
