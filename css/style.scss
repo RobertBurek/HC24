@@ -87,25 +87,34 @@ section {
 // 	display: none;
 // }
 
-	.bars-icon {
-		display: none;
-	}
-	.nav-items {
-		display: block;
-	}
-	.nav-items a {
-		font-size: 0.8rem;
-		font-weight: bold;
-		color: $text-nav-color;
-		padding: 0 7px;
-		text-transform: uppercase;
-		text-decoration: none;
-		letter-spacing: 2px;
-		transition: color 0.2s;
-	}
-	.nav-items a:hover {
-		color: $nav-hover-color;
-	}
+.bars-icon {
+	display: none;
+}
+.nav-items {
+	display: block;
+}
+.nav-items a {
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: $text-nav-color;
+	padding: 0 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: color 0.2s;
+}
+.nav-items a:hover {
+	color: $nav-hover-color;
+}
+
+.logo-picture {
+	height: $height-nav;
+	width: $height-nav;
+	position: absolute;
+	top: 50%;
+	left: 48%;
+	transform: translate( -50%, -50%);
+}
 
 /* header */
 
@@ -376,6 +385,9 @@ main {
 	.nav-items a {
 		padding: 0 15px;
 	}
+	.logo-picture {
+		left: 49%;
+	}
 	.form {
 		button {
 			margin-top: 40px;
@@ -459,6 +471,10 @@ main {
 }
 
 @media (min-width: 768px) {
+	.logo-picture {
+		height: $height-nav * 2;
+		width: $height-nav * 2;
+	}
 	.nav {
 		height: 4rem;
 		line-height: 4rem;
@@ -468,6 +484,9 @@ main {
 		padding: 2rem 3rem;
 		letter-spacing: 2px;
 		transition: color 0.2s;
+	}
+	section {
+		scroll-margin-top: $height-nav * 2 + $container-margin;
 	}
 	.header {
 		height: 500px;
