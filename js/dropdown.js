@@ -1,7 +1,7 @@
 const dropdown = document.querySelector('.dropdown-option');
 const dropdownBtns = document.querySelectorAll('.dropdown-btn');
-console.log(dropdown);
-console.log(dropdownBtns);
+// console.log(dropdown);
+// console.log(dropdownBtns);
 
 function opendropdownItems() {
 	if(this.nextElementSibling.classList.contains('dropdown-active')) {
