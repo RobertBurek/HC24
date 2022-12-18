@@ -1,0 +1,19 @@
+div.snowflake {
+    font-size: 15px;
+	color: white;
+	position: absolute;
+	top: -50px;
+	animation: snow3D linear,snowY linear;
+}
+
+@keyframes snowY {
+	to {
+		transform: translateY(110vh);
+	}
+}
+
+@keyframes snow3D {
+	to {
+		transform: rotate3d(1, 1, 1, 10000deg);
+	}
+}
