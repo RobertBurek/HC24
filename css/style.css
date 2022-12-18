@@ -330,7 +330,15 @@ main {
 }
 
 /* contact */
-.contact h3,
+.contact h3 {
+  color: white;
+}
+
+/* job */
+.job {
+  display: none;
+}
+
 .job h3 {
   color: white;
 }
