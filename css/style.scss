@@ -113,7 +113,7 @@ section {
 	position: absolute;
 	top: 50%;
 	left: 48%;
-	transform: translate( -50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 /* header */
@@ -185,7 +185,7 @@ main {
 }
 
 .about-info {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	width: 80%;
 	margin-left: 10%;
 	text-align: justify;
@@ -195,6 +195,8 @@ main {
 
 .offers-info {
 	text-align: center;
+	width: 80%;
+	margin-left: 10%;
 }
 .offer {
 	display: block;
@@ -472,21 +474,23 @@ main {
 
 @media (min-width: 768px) {
 	.logo-picture {
-		height: $height-nav * 2;
-		width: $height-nav * 2;
+		height: $height-nav * 2.5;
+		width: $height-nav * 2.5;
+	}
+	.container {
+		font-size: 1.8rem;
 	}
 	.nav {
-		height: 4rem;
-		line-height: 4rem;
+		height: 5rem;
+		line-height: 5rem;
 	}
 	.nav-items a {
-		font-size: 1.2rem;
-		padding: 2rem 3rem;
-		letter-spacing: 2px;
-		transition: color 0.2s;
+		font-size: 1.5rem;
+		padding: 2.2rem 4.5rem;
+		letter-spacing: 3px;
 	}
 	section {
-		scroll-margin-top: $height-nav * 2 + $container-margin;
+		scroll-margin-top: $height-nav * 2.5 + $container-margin;
 	}
 	.header {
 		height: 500px;
@@ -503,6 +507,57 @@ main {
 	}
 	.header-text p {
 		font-size: 2.3rem;
+	}
+	.shadow {
+		max-width: 750px;
+	}
+	.section-title {
+		margin-bottom: 30px;
+		letter-spacing: 2px;
+	}
+	.dropdown-btn {
+		padding: 12px;
+	}
+	.dropdown-box:hover button {
+		transform: scale(1.12);
+	}
+	.dropdown-btn i {
+		font-size: 3rem;
+	}
+	.dropdown-btn p {
+		font-size: 2rem;
+		margin-top: 9px;
+	}
+	.info-list p {
+		font-size: 1.7rem;
+	}
+	.info-list {
+		width: 300px;
+	}
+	#ask-offer {
+		height: 510px;
+	}
+	.form {
+		position: relative;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 500px;
+	}
+	.form p {
+		font-size: 1.5rem;
+	}
+	.footer-text {
+		font-size: 1.6rem;
+	}
+	.form input {
+		font-size: 1.6rem;
+	}
+	.form button {
+		font-size: 1.6rem;
+	}
+	.form button {
+		position: relative;
+		left: 6%;
 	}
 }
 
