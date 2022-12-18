@@ -330,7 +330,8 @@ main {
 }
 
 /* contact */
-.contact h3 {
+.contact h3,
+.job h3 {
   color: white;
 }
 
