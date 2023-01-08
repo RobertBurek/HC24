@@ -162,18 +162,21 @@
                 naprawami i jest fachowcem w wielu dziedzinach. Na warszawskim rynku istnieje duże zapotrzebowanie
                 na usługi takich specjalistów. Szukasz pracy w tym zawodzie lub chcesz doskonalić swoje umiejętności
                 w jednej z najbardziej rozpoznawanych marek w tej branży usług to napisz do nas.</p>
-            <div class="section-title">
+            <!-- <div class="section-title"> -->
+                <!-- <br> -->
+                <!-- <h3><i class="fas fa-phone"></i> +.. ... ... ...</h3> -->
                 <br>
-                <h3><i class="fas fa-phone"></i> +.. ... ... ...</h3>
-                <br>
-                <h3>Formularz</h3>
+                <!-- <h3>Formularz</h3> -->
                 <!-- <h3>Prześlij CV</h3> -->
-                <form action="sendFilee.php" method="POST" ENCTYPE="multipart/form-data">
+                <form action="./php/sendCV.php" method="POST" ENCTYPE="multipart/form-data">
                     <p><input name="contentMail"></input>Kilka zdań o sobie</p>
-                    <label class="sendJob" style="font-size: 14px;">CV: 
-                        <input type="file" name="plik" /></label>
-                    <input type="hidden" name="cvFile" value="cvFile" />
-                    <input type="submit" value="Wyślij plik" />
+                    <p>
+                        <!-- <label class="sendJob" style="font-size: 16px;">  -->
+                        <input type="file" name="plik" />Plik do wysłania (pdf, jpg)
+                    <!-- </label> -->
+                </p>
+                    <!-- <input type="hidden" name="cvFile" value="cvFile" /> -->
+                    <button type="submit" >Wyślij</button>
 
                     <!-- <label for="file-upload" class="custom-file-upload">
                         <i class="fa fa-cloud-upload"></i> Custom Upload
@@ -182,7 +185,7 @@
                     <!-- <label for="fileUpload">Upload file</label>
                     <input type="file" id="fileUpload"> -->
                 </form>
-            </div>
+            <!-- </div> -->
         </section>
     </main>
 

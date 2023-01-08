@@ -288,8 +288,8 @@ main {
 
 /* form */
 
-.form {
-	height: 400px;
+form {
+	// height: 400px;
 
 	h2 {
 		margin: 10px 0;
@@ -351,6 +351,13 @@ main {
 	span {
 		margin: 0 5px 0 15px;
 	}
+}
+
+#ask-offer {
+	height: 450px;
+}
+#job {
+	height: 460px;
 }
 
 // input[type="file"] {
@@ -428,6 +435,9 @@ input[type=file]::file-selector-button {
 }
 
 @media (min-width: 300px) {
+	#job {
+		height: 460px;
+	}
 }
 
 @media (min-width: 400px) {
@@ -437,7 +447,7 @@ input[type=file]::file-selector-button {
 	.logo-picture {
 		left: 49%;
 	}
-	.form {
+	form {
 		button {
 			margin-top: 40px;
 		}
@@ -499,7 +509,10 @@ input[type=file]::file-selector-button {
 	.info-list p {
 		font-size: 1.2rem;
 	}
-	.form {
+	#job {
+		height: 385px;
+	}
+	form {
 		p {
 			font-size: 1.3rem;
 		}
@@ -582,27 +595,30 @@ input[type=file]::file-selector-button {
 		width: 300px;
 	}
 	#ask-offer {
-		height: 510px;
+		height: 530px;
 	}
-	.form {
+	#job {
+		height: 495px;
+	}
+	form {
 		position: relative;
 		left: 50%;
 		transform: translate(-50%, 0);
 		width: 500px;
 	}
-	.form p {
+	form p {
 		font-size: 1.5rem;
 	}
 	.footer-text {
 		font-size: 1.6rem;
 	}
-	.form input {
+	form input {
 		font-size: 1.6rem;
 	}
-	.form button {
+	form button {
 		font-size: 1.6rem;
 	}
-	.form button {
+	form button {
 		position: relative;
 		left: 6%;
 	}
