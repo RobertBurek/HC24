@@ -46,12 +46,11 @@ section {
 	// margin: calc(25vh - 220px) auto;
 	padding: 20px 30px;
 	width: 80%;
-	max-width: 400px;
+	// max-width: 80%;
 	// box-sizing: border-box;
 }
 
 /* navigation */
-
 .nav {
 	position: sticky;
 	top: 0;
@@ -66,26 +65,6 @@ section {
 	width: 100%;
 	max-width: 1200px;
 }
-
-// .bars-icon {
-// 	display: block;
-// 	margin-left: auto;
-// 	line-height: $height-nav;
-// 	padding: 0 $height-nav;
-// 	color: $text-nav-color;
-// 	background: none;
-// 	border: none;
-// 	cursor: pointer;
-// 	transition: color 0.2s;
-// }
-
-// .bars-icon:hover {
-// 	color: $nav-hover-color;
-// }
-
-// .nav-items {
-// 	display: none;
-// }
 
 .bars-icon {
 	display: none;
@@ -115,9 +94,10 @@ section {
 	left: 48%;
 	transform: translate(-50%, -50%);
 }
+/* navigation */
+
 
 /* header */
-
 .header {
 	position: relative;
 	height: 250px;
@@ -153,10 +133,6 @@ section {
 	font-weight: bold;
 }
 
-// .header-text span {
-// color: $nav-hover-color;
-// }
-
 .header-text p {
 	font-size: 0.72rem;
 	letter-spacing: 1px;
@@ -173,9 +149,10 @@ section {
 main {
 	margin: 10px 0px;
 }
+/* header */
+
 
 /* about-us */
-
 .section-title {
 	margin-bottom: 20px;
 	text-transform: uppercase;
@@ -190,13 +167,15 @@ main {
 	margin-left: 10%;
 	text-align: justify;
 }
+/* about-us */
+
 
 /* offer */
-
 .offers-info {
 	text-align: center;
 	width: 80%;
 	margin-left: 10%;
+	text-align: justify;
 }
 .offer {
 	display: block;
@@ -213,8 +192,13 @@ main {
 	text-align: center;
 }
 
-/* dropdown */
+b {
+	color: $nav-hover-color;
+}
+/* offer */
 
+
+/* dropdown */
 .dropdown-btn {
 	display: block;
 	width: 100%;
@@ -261,6 +245,8 @@ main {
 	display: flex;
 	flex-direction: column;
 	display: none;
+	left: 50%;
+	transform: translate(10%, 0);
 }
 .dropdown-active {
 	display: block;
@@ -276,18 +262,24 @@ main {
 	color: gray;
 }
 .info-list {
-	width: 170px;
+	// width: 170px;
+	// position: relative;
+	// left: 60%;
+	// transform: translate(-60%, 0);
+	width: 205px;
 	position: relative;
 	left: 60%;
-	transform: translate(-60%, 0);
+	-webkit-transform: translate(-60%, 0);
+	transform: translate(-80%, 0);
 }
 .info-list p {
-	display: flow-root list-item;
+	// display: flow-root list-item;
 	text-align: left;
 }
+/* dropdown */
+
 
 /* form */
-
 form {
 	// height: 400px;
 
@@ -360,26 +352,16 @@ form {
 	height: 460px;
 }
 
-// input[type="file"] {
-//     // display: none;
-// 	height: 0px;
-// 	width: 0px;
-// }
-// .custom-file-upload {
-// 	float: right;
-// 	padding: 8px 12px;
-// 	margin-top: 30px;
-// 	font-size: 1.1rem;
-// 	font-weight: bold;
-// 	border: 2px solid $text-color;
-// 	background: 0;
-// 	color: $nav-hover-color;
-// 	cursor: pointer;
-// 	transition: all 0.3s;
-// 	letter-spacing: 0.7px;
-// }
+.file {
+	width: 65%;
+}
 
-input[type=file]::file-selector-button {
+.offer-info {
+	width: 80%;
+	text-align: justify;
+}
+
+input[type="file"]::file-selector-button {
 	float: right;
 	// padding: 8px 12px;
 	// margin-top: 30px;
@@ -391,18 +373,21 @@ input[type=file]::file-selector-button {
 	cursor: pointer;
 	transition: all 0.3s;
 	letter-spacing: 0.7px;
-  }
-  
-  input[type=file]::file-selector-button:hover {
+}
+
+input[type="file"]::file-selector-button:hover {
 	background: #588c4d;
 	color: #fff;
 	font-weight: bold;
-  }
+}
+/* form */
 
 /* contact */
 .contact h3 {
 	color: white;
 }
+/* contact */
+
 
 /* job */
 .job {
@@ -411,9 +396,10 @@ input[type=file]::file-selector-button {
 .job h3 {
 	color: white;
 }
+/* job */
+
 
 /* footer */
-
 .footer {
 	background-color: #fff;
 	text-align: center;
@@ -427,208 +413,210 @@ input[type=file]::file-selector-button {
 	font-weight: 500;
 	text-decoration: none;
 }
+/* footer */
 
-@media (orientation: portrait) {
-}
 
-@media (min-width: 200px) {
-}
+// @media (orientation: portrait) {
+// }
 
-@media (min-width: 300px) {
-	#job {
-		height: 460px;
-	}
-}
+// @media (min-width: 200px) {
+// }
 
-@media (min-width: 400px) {
-	.nav-items a {
-		padding: 0 15px;
-	}
-	.logo-picture {
-		left: 49%;
-	}
-	form {
-		button {
-			margin-top: 40px;
-		}
-		div {
-			p {
-				width: 35%;
-			}
-			p:first-child {
-				width: 65%;
-			}
-		}
-	}
-}
+// @media (min-width: 300px) {
+// 	#job {
+// 		height: 460px;
+// 	}
+// }
 
-@media (min-width: 450px) {
-}
+// @media (min-width: 400px) {
+// 	.nav-items a {
+// 		padding: 0 15px;
+// 	}
+// 	.logo-picture {
+// 		left: 49%;
+// 	}
+// 	form {
+// 		button {
+// 			margin-top: 40px;
+// 		}
+// 		div {
+// 			p {
+// 				width: 35%;
+// 			}
+// 			p:first-child {
+// 				width: 65%;
+// 			}
+// 		}
+// 	}
+// }
 
-@media (min-width: 500px) {
-	// .bars-icon {
-	// 	display: none;
-	// }
-	// .nav-items {
-	// 	display: block;
-	// }
-	// .nav-items a {
-	// 	font-size: 0.8rem;
-	// 	font-weight: bold;
-	// 	color: $text-nav-color;
-	// 	padding: 0 15px;
-	// 	text-transform: uppercase;
-	// 	text-decoration: none;
-	// 	letter-spacing: 2px;
-	// 	transition: color 0.2s;
-	// }
-	// .nav-items a:hover {
-	// 	color: $nav-hover-color;
-	// }
-	.header {
-		height: 400px;
-		background-image: url("../img/warsaw_1920.jpg");
-	}
-	.header-text img {
-		height: 150px;
-		width: 150px;
-		margin-left: 20%;
-		text-align: center;
-	}
-	.header-text h1 {
-		font-size: 3.2rem;
-	}
-	.header-text p {
-		font-size: 1.3rem;
-	}
-	.info-list {
-		width: 210px;
-		left: 50%;
-		transform: translate(-40%, 0);
-	}
-	.info-list p {
-		font-size: 1.2rem;
-	}
-	#job {
-		height: 385px;
-	}
-	form {
-		p {
-			font-size: 1.3rem;
-		}
-		div {
-			p {
-				margin: 0px 20px;
-			}
-			p:first-child {
-			}
-		}
-		button {
-			font-size: 1.2rem;
-		}
-	}
-}
+// @media (min-width: 450px) {
+// }
 
-@media (min-width: 600px) {
-}
+// @media (min-width: 500px) {
+// 	// .bars-icon {
+// 	// 	display: none;
+// 	// }
+// 	// .nav-items {
+// 	// 	display: block;
+// 	// }
+// 	// .nav-items a {
+// 	// 	font-size: 0.8rem;
+// 	// 	font-weight: bold;
+// 	// 	color: $text-nav-color;
+// 	// 	padding: 0 15px;
+// 	// 	text-transform: uppercase;
+// 	// 	text-decoration: none;
+// 	// 	letter-spacing: 2px;
+// 	// 	transition: color 0.2s;
+// 	// }
+// 	// .nav-items a:hover {
+// 	// 	color: $nav-hover-color;
+// 	// }
+// 	.header {
+// 		height: 400px;
+// 		background-image: url("../img/warsaw_1920.jpg");
+// 	}
+// 	.header-text img {
+// 		height: 150px;
+// 		width: 150px;
+// 		margin-left: 20%;
+// 		text-align: center;
+// 	}
+// 	.header-text h1 {
+// 		font-size: 3.2rem;
+// 	}
+// 	.header-text p {
+// 		font-size: 1.3rem;
+// 	}
+// 	.info-list {
+// 		width: 210px;
+// 		left: 35%;
+// 		transform: translate(-38%, 0);
+// 	}
+// 	.info-list p {
+// 		// font-size: 1.2rem;
+// 	}
+// 	#job {
+// 		height: 385px;
+// 	}
+// 	form {
+// 		p {
+// 			font-size: 1.3rem;
+// 		}
+// 		div {
+// 			p {
+// 				margin: 0px 20px;
+// 			}
+// 			p:first-child {
+// 			}
+// 		}
+// 		button {
+// 			font-size: 1.2rem;
+// 		}
+// 	}
+// }
 
-@media (min-width: 768px) {
-	.logo-picture {
-		height: $height-nav * 2.5;
-		width: $height-nav * 2.5;
-	}
-	.container {
-		font-size: 1.8rem;
-	}
-	.nav {
-		height: 5rem;
-		line-height: 5rem;
-	}
-	.nav-items a {
-		font-size: 1.5rem;
-		padding: 2.2rem 4.5rem;
-		letter-spacing: 3px;
-	}
-	section {
-		scroll-margin-top: $height-nav * 2.5 + $container-margin;
-	}
-	.header {
-		height: 500px;
-		background-image: url("../img/warsaw_1920.jpg");
-	}
-	.header-text img {
-		height: 200px;
-		width: 200px;
-		margin-left: 20%;
-		text-align: center;
-	}
-	.header-text h1 {
-		font-size: 4.2rem;
-	}
-	.header-text p {
-		font-size: 2.3rem;
-	}
-	.shadow {
-		max-width: 750px;
-	}
-	.section-title {
-		margin-bottom: 30px;
-		letter-spacing: 2px;
-	}
-	.dropdown-btn {
-		padding: 12px;
-	}
-	.dropdown-box:hover button {
-		transform: scale(1.12);
-	}
-	.dropdown-btn i {
-		font-size: 3rem;
-	}
-	.dropdown-btn p {
-		font-size: 2rem;
-		margin-top: 9px;
-	}
-	.info-list p {
-		font-size: 1.7rem;
-	}
-	.info-list {
-		width: 300px;
-	}
-	#ask-offer {
-		height: 530px;
-	}
-	#job {
-		height: 495px;
-	}
-	form {
-		position: relative;
-		left: 50%;
-		transform: translate(-50%, 0);
-		width: 500px;
-	}
-	form p {
-		font-size: 1.5rem;
-	}
-	.footer-text {
-		font-size: 1.6rem;
-	}
-	form input {
-		font-size: 1.6rem;
-	}
-	form button {
-		font-size: 1.6rem;
-	}
-	form button {
-		position: relative;
-		left: 6%;
-	}
-}
+// @media (min-width: 600px) {
+// }
 
-@media (min-width: 992px) {
-}
+// @media (min-width: 768px) {
+// 	.logo-picture {
+// 		height: $height-nav * 2.5;
+// 		width: $height-nav * 2.5;
+// 	}
+// 	.container {
+// 		font-size: 1.8rem;
+// 	}
+// 	.nav {
+// 		height: 5rem;
+// 		line-height: 5rem;
+// 	}
+// 	.nav-items a {
+// 		font-size: 1.5rem;
+// 		padding: 2.2rem 4.5rem;
+// 		letter-spacing: 3px;
+// 	}
+// 	section {
+// 		scroll-margin-top: $height-nav * 2.5 + $container-margin;
+// 	}
+// 	.header {
+// 		height: 500px;
+// 		background-image: url("../img/warsaw_1920.jpg");
+// 	}
+// 	.header-text img {
+// 		height: 200px;
+// 		width: 200px;
+// 		margin-left: 20%;
+// 		text-align: center;
+// 	}
+// 	.header-text h1 {
+// 		font-size: 4.2rem;
+// 	}
+// 	.header-text p {
+// 		font-size: 2.3rem;
+// 	}
+// 	.shadow {
+// 		max-width: 750px;
+// 	}
+// 	.section-title {
+// 		margin-bottom: 30px;
+// 		letter-spacing: 2px;
+// 	}
+// 	.dropdown-btn {
+// 		padding: 12px;
+// 	}
+// 	.dropdown-box:hover button {
+// 		transform: scale(1.12);
+// 	}
+// 	.dropdown-btn i {
+// 		font-size: 3rem;
+// 	}
+// 	.dropdown-btn p {
+// 		font-size: 2rem;
+// 		margin-top: 9px;
+// 	}
+// 	.info-list p {
+// 		font-size: 1.7rem;
+// 	}
+// 	.info-list {
+// 		width: 300px;
+// 	}
+// 	#ask-offer {
+// 		height: 530px;
+// 	}
+// 	#job {
+// 		height: 495px;
+// 	}
+// 	form {
+// 		position: relative;
+// 		left: 50%;
+// 		transform: translate(-50%, 0);
+// 		width: 500px;
+// 	}
+// 	form p {
+// 		font-size: 1.5rem;
+// 	}
+// 	.footer-text {
+// 		font-size: 1.6rem;
+// 	}
+// 	form input {
+// 		font-size: 1.6rem;
+// 	}
+// 	form button {
+// 		font-size: 1.6rem;
+// 	}
+// 	form button {
+// 		position: relative;
+// 		left: 6%;
+// 	}
+// }
 
-@media (min-width: 1200px) {
-}
+// @media (min-width: 992px) {
+// }
 
-@media (min-width: 1400px) {
-}
+// @media (min-width: 1200px) {
+// }
+
+// @media (min-width: 1400px) {
+// }
