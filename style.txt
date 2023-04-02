@@ -1,0 +1,102 @@
+.about-info {
+    margin-bottom: 15px;
+    width: 90%;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+.container {
+    margin: 25px auto;
+    /* width: 100%; */
+    /* max-width: 1200px; */
+}
+
+.shadow {
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 40px -10px #000;
+    box-shadow: 0 0 40px -10px #000;
+    padding: 20px 30px;
+    width: 87%;
+}
+
+.dropdown-info {
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: none;
+    left: 50%;
+    /* -webkit-transform: translate(10%, 0); */
+    /* transform: translate(15%, 0); */
+}
+
+.info-list {
+    width: 144px;
+    /* position: relative; */
+    /* left: 60%; */
+    /* -webkit-transform: translate(-60%, 0); */
+    /* transform: translate(-80%, 0); */
+    margin-left: 15%;
+    text-align: left;
+    font-size: .7em;
+}
+
+.info-list p {
+    /* text-align: left; */
+    /* font-size: .6em; */
+}
+
+.offers-info {
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+.section-title {
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #55f335;
+    letter-spacing: 1px;
+}
+
+form h2 {
+    /* margin: 5% 0; */
+}
+
+#ask-offer {
+    height: 425px;
+}
+
+.file {
+    /* width: 65%; */
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+    padding-bottom: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #4ad393;
+  font-size: .4em;
+  padding-bottom: 5px;
+}
+
