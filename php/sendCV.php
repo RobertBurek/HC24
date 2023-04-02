@@ -72,6 +72,6 @@ $tresc .="--___$znacznik==--\n";
 mail($odbiorcaWPPL,$tytul,$tresc,$naglowki);
 mail($odbiorcaHC24COMPL,$tytul,$tresc,$naglowki);
 
-header('Location: ' . $_SERVER['HTTP_REFERER'] . '#contact');
+header('Location: ' . $_SERVER['HTTP_REFERER'] . '#nav');
 
 ?>

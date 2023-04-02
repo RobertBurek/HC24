@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeCare24</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <script src="https://kit.fontawesome.com/e5505724c8.js" crossorigin="anonymous"></script>
     <script>
         document.write('<link rel="stylesheet" href="css/style.css?ver=' + Math.floor(Math.random() * 1000) + '"\>');
@@ -34,28 +35,44 @@
             <img src="./img/HC_24_2_big.png" alt="Logo Home Care 24">
             <h1>Home <span>Care 24</span></h1>
             <p>Obsługa techniczna nieruchomości</p>
+            <p id="ekran"></p>
         </div>
+        <script>
+            document.getElementById('ekran').innerHTML=' Ekran: '+window.innerWidth+'/'+window.innerHeight;
+        </script>
     </header>
     <main>
         <section id="about" class="about-us container shadow">
             <h2 class="section-title">O nas</h2>
-            <p class="about-info">
-                Już ponad 10 lat pracujemy w branży obsługi nieruchomości. Wieloletnie doświadczenia pozwoliły nam
+            <!-- <p id="ekran2">
+
+            </p>
+            <script>
+                document.getElementById('ekran2').innerHTML=' Ekran: '+ document.getElementById('about-p1').documentElement.clientWidth +'/'+ document.getElementById('about-p1').documentElement.clientHeight;
+            </script> -->
+            <p id="about-p1" class="about-info">
+                <!-- Już ponad 10 lat pracujemy w branży obsługi nieruchomości. Wieloletnie doświadczenia pozwoliły nam
                 bardzo gruntownie poznać potrzeby techniczne zarówno budynków mieszkalnych jak i biurowych. To
-                doświadczenie oraz wykwalifikowany personel techniczny są gwarancją najwyższej jakości naszych usług.
+                doświadczenie oraz wykwalifikowany personel techniczny są gwarancją najwyższej jakości naszych usług. -->
             </p>
-            <p class="about-info">
-                Optymalizujemy koszty, jesteśmy solidni i profesjonalni. W przypadku awarii działamy szybko i sprawnie.
+            <p id="ekran2"></p>
+            <script>
+                var w = document.getElementById('about-p1').offsetWidth;
+                var h = document.getElementById('about-p1').offsetHeight;
+                document.getElementById('ekran2').innerHTML=' Ekran: '+ w +'/'+ h;
+            </script>
+            <p id="about-p2" class="about-info">
+                <!-- Optymalizujemy koszty, jesteśmy solidni i profesjonalni. W przypadku awarii działamy szybko i sprawnie.
                 Długotrwałą obsługę prowadzimy na podstawie planów napraw i konserwacji. Wykorzystując zespół
-                współpracujących z nami ekspertów wykonujemy modernizacje urządzeń i instalacji.
+                współpracujących z nami ekspertów wykonujemy modernizacje urządzeń i instalacji. -->
             </p>
-            <p class="about-info">
-                Wykonujemy kontrole techniczne obiektów budowlanych (półroczne, roczne, pięcioletnie) we wszystkich
-                zakresach konstrukcyjnych i instalacyjnych. Wykonujemy kontrole gwarancyjne we wszystkich branżach.
+            <p id="about-p3" class="about-info">
+                <!-- Wykonujemy kontrole techniczne obiektów budowlanych (półroczne, roczne, pięcioletnie) we wszystkich
+                zakresach konstrukcyjnych i instalacyjnych. Wykonujemy kontrole gwarancyjne we wszystkich branżach. -->
             </p>
-            <p class="about-info">
-                Wspieramy Zarządców, Zarządy Wspólnot i Spółdzielni przygotowując opinie techniczne na potrzeby
-                dochodzenia roszczeń (opinie rzeczoznawców lub biegłych sądowych).
+            <p id="about-p4" class="about-info">
+                <!-- Wspieramy Zarządców, Zarządy Wspólnot i Spółdzielni przygotowując opinie techniczne na potrzeby
+                dochodzenia roszczeń (opinie rzeczoznawców lub biegłych sądowych). -->
             </p>
             <p class="about-info">
                 Zapraszamy do zapoznania się z naszą ofertą.<br>
@@ -64,13 +81,13 @@
         </section>
         <section id="offers" class="offers container shadow">
             <h2 class="section-title">Oferty</h2>
-            <p class="offers-info">
-                Utrzymujemy sprawność techniczną obsługiwanych nieruchomości. Wspieramy naszych klientów <b>24 godziny
-                    na
-                    dobę.</b> Przez prowadzenie kompleksowej konserwacji optymalizujemy koszty napraw i modernizacji.
+            <p id="offers-p" class="offers-info">
+                <!-- Utrzymujemy sprawność techniczną obsługiwanych nieruchomości. Wspieramy naszych klientów  -->
+                <b>24 godziny na dobę.</b> 
+                    <!-- Przez prowadzenie kompleksowej konserwacji optymalizujemy koszty napraw i modernizacji.
                 Służymy
                 fachowym doradztwem, chętnie dzielimy się wiedzą i źródłami dostaw w celu minimalizacji kosztów części
-                zamiennych.
+                zamiennych. -->
             </p>
             <div class="dropdown-option">
                 <div class="dropdown-box">
@@ -79,9 +96,9 @@
                         <p dropdown>Konserwacja budynku</p>
                     </button>
                     <div class="dropdown-info">
-                        <p class="offer-info">
-                            Prowadzimy kompleksowe usługi konserwacji budynków mieszkalnych, biurowych i technicznych w
-                            zakresie:
+                        <p id="offer-p1" class="offer-info">
+                            <!-- Prowadzimy kompleksowe usługi konserwacji budynków mieszkalnych, biurowych i technicznych w
+                            zakresie: -->
                         </p>
                         <div class="info-list">
                             <p>1. Prac budowlanych.</p>
@@ -93,9 +110,9 @@
                             <p>7. Instalacji teletechnicznych.</p>
                             <p>8. Instalacji przeciwpożarowych.</p>
                         </div>
-                        <p class="offer-info">
-                            W przypadku rozszerzonych potrzeb, remontujemy i modernizujemy budynki. Szczegółowy zakres
-                            prac wysyłamy na prośbę klientów.
+                        <p id="offer-p2" class="offer-info">
+                            <!-- W przypadku rozszerzonych potrzeb, remontujemy i modernizujemy budynki. Szczegółowy zakres
+                            prac wysyłamy na prośbę klientów. -->
                         </p>
                     </div>
                 </div>
@@ -105,9 +122,9 @@
                         <p dropdown>Przeglądy budowlane <br>i techniczne</p>
                     </button>
                     <div class="dropdown-info">
-                        <p class="offer-info">
-                            Wykonujemy wszystkie konieczne przeglądy wymagane przepisami prawa budowlanego.
-                            Przygotowujemy pełny plan kontroli technicznych. Przykładowe przeglądy i kontrole:
+                        <p id="offer-p3" class="offer-info">
+                            <!-- Wykonujemy wszystkie konieczne przeglądy wymagane przepisami prawa budowlanego.
+                            Przygotowujemy pełny plan kontroli technicznych. Przykładowe przeglądy i kontrole: -->
                         </p>
                         <div class="info-list">
                             <p>1. Przeglądy budowlane.</p>
@@ -121,9 +138,9 @@
                             <p>9. Kontrole instalacji ochrony środowiska.</p>
                             <p>10. Kontrole systemów dozoru.</p>
                         </div>
-                        <p class="offer-info">
-                            W przypadku awarii wykonujemy badania specjalistycznym sprzętem: kamera termowizyjna, robot.
-                            Pełny zakres usług przesyłamy na życzenie klientów.
+                        <p id="offer-p4" class="offer-info">
+                            <!-- W przypadku awarii wykonujemy badania specjalistycznym sprzętem: kamera termowizyjna, robot.
+                            Pełny zakres usług przesyłamy na życzenie klientów. -->
                         </p>
                     </div>
                 </div>
@@ -133,10 +150,10 @@
                         <p dropdown>Pogotowie techniczne <br>i dokumentacja</p>
                     </button>
                     <div class="dropdown-info">
-                        <p class="offer-info">
-                            Prowadzimy całodobowe pogotowie techniczne.
+                        <p id="offer-p5" class="offer-info">
+                            <!-- Prowadzimy całodobowe pogotowie techniczne.
                             Wykonane prace takie jak konserwacja, przeglądy, kontrole, dokumentujemy w prowadzonych
-                            przez nas rejestrach na bieżąco dostępnych dla właścicieli i zarządców obiektów.
+                            przez nas rejestrach na bieżąco dostępnych dla właścicieli i zarządców obiektów. -->
                         </p>
                         <div class="info-list">
                         </div>
@@ -190,10 +207,12 @@
         </section>
         <section id="job" class="job container shadow">
             <h2 class="section-title">Praca</h2>
-            <p class="offers-info">Jesteś osobą, która jest fachowcem w wielu dziedzinach i poradzi sobie z różnymi
+            <p id="job-p1" class="offers-info">
+                <!-- Jesteś osobą, która jest fachowcem w wielu dziedzinach i poradzi sobie z różnymi
                 naprawami. Na warszawskim rynku istnieje duże zapotrzebowanie
                 na usługi takich specjalistów. Szukasz pracy w tym zawodzie lub chcesz doskonalić swoje umiejętności
-                w jednej z najbardziej rozpoznawanych marek w tej branży usług, to napisz do nas.</p>
+                w jednej z najbardziej rozpoznawanych marek w tej branży usług, to napisz do nas. -->
+            </p>
             <!-- <div class="section-title"> -->
             <!-- <br> -->
             <!-- <h3><i class="fas fa-phone"></i> +.. ... ... ...</h3> -->

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap&subset=latin-ext");
 *,
 *::before,
@@ -146,6 +147,22 @@ main {
 
 /* header */
 /* about-us */
+#about-p1::before {
+  content: "Już ponad 10 lat pracujemy w branży obsługi nieruchomości. Wieloletnie doświadczenia pozwoliły nam bardzo gruntownie poznać po- trzeby techniczne zarówno budynków miesz- kalnych jak i biurowych. To doświadczenie oraz wykwalifikowany personel techniczny są gwarancją najwyższej jakości naszych usług.";
+}
+
+#about-p2::before {
+  content: "Optymalizujemy koszty, jesteśmy solidni i pro- fesjonalni. W przypadku awarii działamy szybko i sprawnie. Długotrwałą obsługę prowa- dzimy na podstawie planów napraw i konser- wacji. Wykorzystując zespół współpracujących z nami ekspertów wykonujemy modernizacje urządzeń i instalacji.";
+}
+
+#about-p3::before {
+  content: "Wykonujemy kontrole techniczne obiektów budowlanych (półroczne, roczne, pięcioletnie) we wszystkich zakresach konstrukcyjnych i in- stalacyjnych. Wykonujemy kontrole gwarancyj- ne we wszystkich branżach.";
+}
+
+#about-p4::before {
+  content: "Wspieramy Zarządców, Zarządy Wspólnot i Spółdzielni przygotowując opinie techniczne na potrzeby dochodzenia roszczeń (opinie rze- czoznawców lub biegłych sądowych).";
+}
+
 .section-title {
   margin-bottom: 5%;
   text-transform: uppercase;
@@ -156,9 +173,12 @@ main {
 
 .about-info {
   margin-bottom: 15px;
-  width: 90%;
-  margin-left: 5%;
+  width: 210px;
   text-align: justify;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* about-us */
@@ -166,8 +186,12 @@ main {
 .offers-info {
   text-align: center;
   width: 90%;
-  margin-left: 5%;
   text-align: justify;
+  width: 210px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .offer {
@@ -188,6 +212,14 @@ main {
 
 b {
   color: #55f335;
+}
+
+#offers-p::before {
+  content: "Utrzymujemy sprawność techniczną obsłu- giwanych nieruchomości. Wspieramy naszych klientów ";
+}
+
+#offers-p::after {
+  content: "Przez prowadze- nie kompleksowej konserwacji optymalizujemy koszty napraw i modernizacji. Służymy facho- wym doradztwem, chętnie dzielimy się wiedzą i źródłami dostaw w celu minimalizacji kosztów części zamiennych.";
 }
 
 /* offer */
@@ -212,7 +244,7 @@ b {
 }
 
 .dropdown-btn p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-top: 5px;
 }
 
@@ -275,9 +307,37 @@ b {
 
 .info-list {
   width: 144px;
-  margin-left: 14%;
+  margin-left: 6px;
   text-align: left;
-  font-size: .7em;
+  font-size: 0.7rem;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.info-list p {
+  padding: 1px 0;
+}
+
+#offer-p1::before {
+  content: "Prowadzimy kompleksowe usługi konserwacji budynków mieszkal- nych, biurowych i technicznych w zakresie:";
+}
+
+#offer-p2::before {
+  content: "W przypadku rozszerzonych po- trzeb, remontujemy i modernizu- jemy budynki. Szczegółowy zakres prac wysyłamy na prośbę klientów.";
+}
+
+#offer-p3::before {
+  content: "Wykonujemy wszystkie konieczne przeglądy wymagane przepisami prawa budowlanego. Przygotowuje- my pełny plan kontroli technicz- nych. Przykładowe przeglądy i kon- trole:";
+}
+
+#offer-p4::before {
+  content: "W przypadku awarii wykonujemy badania specjalistycznym sprzę- tem: kamera termowizyjna, robot. Pełny zakres usług przesyłamy na życzenie klientów.";
+}
+
+#offer-p5::before {
+  content: "Prowadzimy całodobowe pogoto- wie techniczne. Wykonane prace takie jak konserwacja, przeglądy, kontrole, dokumentujemy w pro- wadzonych przez nas rejestrach na bieżąco dostępnych dla wła- ścicieli i zarządców obiektów.";
 }
 
 /* dropdown */
@@ -366,10 +426,17 @@ form span {
   height: 370px;
 }
 
+#job-p1::before {
+  content: "Jesteś osobą, która jest fachowcem w wielu dziedzinach i poradzi sobie z różnymi napra- wami. Na warszawskim rynku istnieje duże zapotrzebowanie na usługi takich specjalistów. Szukasz pracy w tym zawodzie lub chcesz doskonalić swoje umiejętności w jednej z naj- bardziej rozpoznawanych marek w tej branży usług, to napisz do nas.";
+}
+
 .offer-info {
-  width: 80%;
-  margin-left: 10%;
+  width: 163px;
   text-align: justify;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 input[type="file"]::file-selector-button {
