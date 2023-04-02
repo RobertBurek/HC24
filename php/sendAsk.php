@@ -21,6 +21,7 @@ function sendInfoMail($nameInfo, $mailInfo, $contentInfo, $surfaceInfo, $apartme
     // $message_body .= "Info ze strony http://robertburek.pl/HC24/"."\n";
     $message_body .= "Info ze strony ".$_SERVER['HTTP_REFERER'];
     mail("homecare.24@wp.pl", "Zapytanie od " . $nameInfo, $message_body, $headers);
+    mail("homecare.24@hc24.com.pl", "Zapytanie od " . $nameInfo, $message_body, $headers);
 }
 
 sendInfoMail($name, $mail, $content, $surface, $apartments);

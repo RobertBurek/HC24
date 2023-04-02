@@ -3,7 +3,8 @@ srand((double)microtime()*1000000);
 $znacznik = md5(uniqid(rand()));
 
 // dane o odbiorcy, nadawcy i załączniku
-$odbiorca = "homecare.24@wp.pl";
+$odbiorcaWPPL = "homecare.24@wp.pl";
+$odbiorcaHC24COMPL = "homecare.24@hc24.com.pl";
 $tytul = "Jestem zainteresowana/y ...";
 $nadawca_imie = "Szukam Pracy";
 $nadawca_email = "szukam@pracy.pl";
@@ -68,7 +69,8 @@ $tresc .= chunk_split(base64_encode($dane));
 $tresc .="--___$znacznik==--\n";
 
 // wysłanie listu
-mail($odbiorca,$tytul,$tresc,$naglowki);
+mail($odbiorcaWPPL,$tytul,$tresc,$naglowki);
+mail($odbiorcaHC24COMPL,$tytul,$tresc,$naglowki);
 
 header('Location: ' . $_SERVER['HTTP_REFERER'] . '#contact');
 
