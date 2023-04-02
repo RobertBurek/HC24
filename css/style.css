@@ -25,8 +25,6 @@ html {
 
 .container {
   margin: 25px auto;
-  width: 100%;
-  max-width: 1200px;
 }
 
 section {
@@ -38,7 +36,7 @@ section {
   -webkit-box-shadow: 0 0 40px -10px #000;
           box-shadow: 0 0 40px -10px #000;
   padding: 20px 30px;
-  width: 80%;
+  width: 87%;
 }
 
 /* navigation */
@@ -149,7 +147,7 @@ main {
 /* header */
 /* about-us */
 .section-title {
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   text-transform: uppercase;
   text-align: center;
   color: #55f335;
@@ -158,8 +156,8 @@ main {
 
 .about-info {
   margin-bottom: 15px;
-  width: 80%;
-  margin-left: 10%;
+  width: 90%;
+  margin-left: 5%;
   text-align: justify;
 }
 
@@ -167,8 +165,8 @@ main {
 /* offer */
 .offers-info {
   text-align: center;
-  width: 80%;
-  margin-left: 10%;
+  width: 90%;
+  margin-left: 5%;
   text-align: justify;
 }
 
@@ -257,9 +255,6 @@ b {
       -ms-flex-direction: column;
           flex-direction: column;
   display: none;
-  left: 50%;
-  -webkit-transform: translate(10%, 0);
-          transform: translate(10%, 0);
 }
 
 .dropdown-active {
@@ -279,23 +274,14 @@ b {
 }
 
 .info-list {
-  width: 205px;
-  position: relative;
-  left: 60%;
-  -webkit-transform: translate(-60%, 0);
-  transform: translate(-80%, 0);
-}
-
-.info-list p {
+  width: 144px;
+  margin-left: 14%;
   text-align: left;
+  font-size: .7em;
 }
 
 /* dropdown */
 /* form */
-form h2 {
-  margin: 10px 0;
-}
-
 form h3 {
   text-transform: none;
 }
@@ -315,6 +301,7 @@ form input {
   text-align: center;
   margin-bottom: 5px;
   color: #4ad393;
+  padding-bottom: 5px;
 }
 
 form input:focus {
@@ -372,19 +359,16 @@ form span {
 }
 
 #ask-offer {
-  height: 450px;
+  height: 400px;
 }
 
 #job {
-  height: 460px;
-}
-
-.file {
-  width: 65%;
+  height: 370px;
 }
 
 .offer-info {
   width: 80%;
+  margin-left: 10%;
   text-align: justify;
 }
 
