@@ -403,6 +403,11 @@ form div {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 80%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 form div p {
@@ -493,4 +498,171 @@ input[type="file"]::file-selector-button:hover {
 }
 
 /* footer */
+@media (min-width: 400px) {
+  #about-p1::before {
+    content: "Już ponad 10 lat pracujemy w branży obsługi nie- ruchomości. Wieloletnie doświadczenia pozwoliły nam bardzo gruntownie poznać potrzeby techniczne zarówno budynków mieszkalnych jak i biurowych. To doświadczenie oraz wykwalifikowany personel techni- czny są gwarancją najwyższej jakości naszych usług.";
+  }
+  #about-p2::before {
+    content: "Optymalizujemy koszty, jesteśmy solidni i profesjo- nalni. W przypadku awarii działamy szybko i sprawnie. Długotrwałą obsługę prowadzimy na podstawie pla- nów napraw i konserwacji. Wykorzystując zespół współpracujących z nami ekspertów wykonujemy mo- dernizacje urządzeń i instalacji.";
+  }
+  #about-p3::before {
+    content: "Wykonujemy kontrole techniczne obiektów budowla- nych (półroczne, roczne, pięcioletnie) we wszystkich zakresach konstrukcyjnych i instalacyjnych. Wykonu- jemy kontrole gwarancyjne we wszystkich branżach.";
+  }
+  #about-p4::before {
+    content: "Wspieramy Zarządców, Zarządy Wspólnot i Spółdziel- ni przygotowując opinie techniczne na potrzeby dochodzenia roszczeń (opinie rzeczoznawców lub biegłych sądowych).";
+  }
+  #offers-p::before {
+    content: "Utrzymujemy sprawność techniczną obsługiwanych nieruchomości. Wspieramy naszych klientów ";
+  }
+  #offers-p::after {
+    content: "Przez prowadzenie kompleksowej konserwacji optymalizujemy koszty napraw i moder- nizacji. Służymy fachowym doradztwem, chętnie dzielimy się wiedzą i źródłami dostaw w celu mini- malizacji kosztów części zamiennych.";
+  }
+  #job-p1::before {
+    content: "Jesteś osobą, która jest fachowcem w wielu dzie- dzinach i poradzi sobie z różnymi naprawami. Na warszawskim rynku istnieje duże zapotrzebowanie na usługi takich specjalistów. Szukasz pracy w tym zawodzie lub chcesz doskonalić swoje umiejętności w jednej z najbardziej rozpoznawanych marek w tej branży usług, to napisz do nas.";
+  }
+  .nav-items a {
+    padding: 0 15px;
+  }
+  .logo-picture {
+    left: 49%;
+  }
+  .about-info,
+  .offers-info {
+    width: 240px;
+  }
+  form button {
+    margin-top: 40px;
+  }
+  form div p {
+    width: 35%;
+  }
+  form div p:first-child {
+    width: 65%;
+  }
+}
+
+@media (min-width: 450px) {
+  .shadow {
+    width: 66%;
+  }
+}
+
+@media (min-width: 500px) {
+  #about-p1::before {
+    content: "Już ponad 10 lat pracujemy w branży obsługi nie- ruchomości. Wieloletnie doświadczenia pozwoliły nam bardzo gruntownie poznać potrzeby techniczne zarówno budynków mieszkalnych jak i biurowych. To doświa- dczenie oraz wykwalifikowany personel techniczny są gwarancją najwyższej jakości naszych usług.";
+  }
+  #about-p2::before {
+    content: "Optymalizujemy koszty, jesteśmy solidni i profesjonalni. W przypadku awarii działamy szybko i sprawnie. Długo- trwałą obsługę prowadzimy na podstawie planów napraw i konserwacji. Wykorzystując zespół współpra- cujących z nami ekspertów wykonujemy modernizacje urządzeń i instalacji.";
+  }
+  #about-p3::before {
+    content: "Wykonujemy kontrole techniczne obiektów budowla- nych (półroczne, roczne, pięcioletnie) we wszystkich zakresach konstrukcyjnych i instalacyjnych. Wykonuje- my kontrole gwarancyjne we wszystkich branżach.";
+  }
+  #about-p4::before {
+    content: "Wspieramy Zarządców, Zarządy Wspólnot i Spółdzielni przygotowując opinie techniczne na potrzeby dochodze- nia roszczeń (opinie rzeczoznawców lub biegłych sądo- wych).";
+  }
+  #offers-p::before {
+    content: "Utrzymujemy sprawność techniczną obsługiwanych nie- ruchomości. Wspieramy naszych klientów ";
+  }
+  #offers-p::after {
+    content: "Przez prowadzenie kompleksowej konserwacji optymalizujemy koszty napraw i modernizacji. Służymy fachowym doradztwem, chętnie dzielimy się wiedzą i źródłami dostaw w celu minimalizacji kosztów części zamiennych.";
+  }
+  #offer-p1::before {
+    content: "Prowadzimy kompleksowe usługi konser- wacji budynków mieszkalnych, biurowych i technicznych w zakresie:";
+  }
+  #offer-p2::before {
+    content: "W przypadku rozszerzonych potrzeb, remontujemy i modernizujemy budynki. Szczegółowy zakres prac wysyłamy na prośbę klientów.";
+  }
+  #offer-p3::before {
+    content: "Wykonujemy wszystkie konieczne prze- glądy wymagane przepisami prawa budo- wlanego. Przygotowujemy pełny plan kontroli technicznych. Przykładowe prze- glądy i kontrole:";
+  }
+  #offer-p4::before {
+    content: "W przypadku awarii wykonujemy badania specjalistycznym sprzętem: kamera ter- mowizyjna, robot. Pełny zakres usług przesyłamy na życzenie klientów.";
+  }
+  #offer-p5::before {
+    content: "Prowadzimy całodobowe pogotowie techniczne. Wykonane prace takie jak konserwacja, przeglądy, kontrole, doku- mentujemy w prowadzonych przez nas rejestrach na bieżąco dostępnych dla właścicieli i zarządców obiektów.";
+  }
+  #job-p1::before {
+    content: "Jesteś osobą, która jest fachowcem w wielu dzie- dzinach i poradzi sobie z różnymi naprawami. Na warszawskim rynku istnieje duże zapotrzebowanie na usługi takich specjalistów. Szukasz pracy w tym zawodzie lub chcesz doskonalić swoje umiejętności w jednej z najbardziej rozpoznawanych marek w tej branży usług, to napisz do nas.";
+  }
+  .shadow {
+    width: 77%;
+  }
+  .header {
+    height: 400px;
+    background-image: url("../img/warsaw_1920.jpg");
+  }
+  .header-text img {
+    height: 150px;
+    width: 150px;
+    margin-left: 20%;
+    text-align: center;
+  }
+  .header-text h1 {
+    font-size: 3.1rem;
+  }
+  .header-text p {
+    font-size: 1.3rem;
+  }
+  .nav {
+    line-height: 23px;
+  }
+  .nav-items a {
+    padding: 0 17px;
+    font-size: 1rem;
+  }
+  .offer-info {
+    width: 222px;
+    font-size: 1.2rem;
+  }
+  .info-list {
+    width: 205px;
+    font-size: 1rem;
+    padding-top: 2px;
+  }
+  .about-info,
+  .offers-info {
+    width: 300px;
+    font-size: 1.2rem;
+  }
+  .info-list p {
+    padding: 2px 0;
+  }
+  #job {
+    height: 385px;
+  }
+  .job-file {
+    width: 70%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #ask-offer {
+    height: 430px;
+  }
+  form p {
+    font-size: 1.3rem;
+  }
+  form div p {
+    margin: 0px 20px;
+  }
+  form button {
+    font-size: 1.2rem;
+  }
+  form input {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 650px) {
+  .shadow {
+    width: 60%;
+  }
+}
+
+@media (min-width: 750px) {
+  .shadow {
+    width: 440px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -35,11 +35,11 @@
             <img src="./img/HC_24_2_big.png" alt="Logo Home Care 24">
             <h1>Home <span>Care 24</span></h1>
             <p>Obsługa techniczna nieruchomości</p>
-            <p id="ekran"></p>
+            <!-- <p id="ekran"></p>
         </div>
         <script>
             document.getElementById('ekran').innerHTML=' Ekran: '+window.innerWidth+'/'+window.innerHeight;
-        </script>
+        </script> -->
     </header>
     <main>
         <section id="about" class="about-us container shadow">
@@ -55,12 +55,12 @@
                 bardzo gruntownie poznać potrzeby techniczne zarówno budynków mieszkalnych jak i biurowych. To
                 doświadczenie oraz wykwalifikowany personel techniczny są gwarancją najwyższej jakości naszych usług. -->
             </p>
-            <p id="ekran2"></p>
+            <!-- <p id="ekran2"></p>
             <script>
                 var w = document.getElementById('about-p1').offsetWidth;
                 var h = document.getElementById('about-p1').offsetHeight;
                 document.getElementById('ekran2').innerHTML=' Ekran: '+ w +'/'+ h;
-            </script>
+            </script> -->
             <p id="about-p2" class="about-info">
                 <!-- Optymalizujemy koszty, jesteśmy solidni i profesjonalni. W przypadku awarii działamy szybko i sprawnie.
                 Długotrwałą obsługę prowadzimy na podstawie planów napraw i konserwacji. Wykorzystując zespół
@@ -221,7 +221,7 @@
             <!-- <h3>Prześlij CV</h3> -->
             <form action="./php/sendCV.php" method="POST" ENCTYPE="multipart/form-data">
                 <p><input name="contentMail"></input>Kilka zdań o sobie</p>
-                <p>
+                <p class="job-file">
                     <!-- <label class="sendJob" style="font-size: 16px;">  -->
                     <input class="file" type="file" name="plik" /><br>Plik do wysłania (pdf, jpg)
                     <!-- </label> -->
