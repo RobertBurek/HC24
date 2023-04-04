@@ -257,12 +257,6 @@ b {
   display: block;
 }
 
-.long-word {
-  height: 30px;
-  width: 80%;
-  margin-left: 10%;
-}
-
 .dropdown-note {
   display: inline-block;
   margin-left: 20px;
