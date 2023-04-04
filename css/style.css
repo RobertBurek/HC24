@@ -449,7 +449,7 @@ input[type="file"]::file-selector-button:hover {
     text-align: justify;
   }
   form button {
-    margin-top: 40px;
+    margin-top: 25px;
   }
   form div p {
     width: 40%;
@@ -498,7 +498,6 @@ input[type="file"]::file-selector-button:hover {
   }
   .about-info,
   .offers-info {
-    width: 300px;
     font-size: 1.2rem;
   }
   .info-list p {
@@ -534,6 +533,115 @@ input[type="file"]::file-selector-button:hover {
 @media (min-width: 650px) {
   .shadow {
     width: 410px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-picture {
+    height: 50px;
+    width: 50px;
+  }
+  .container {
+    font-size: 1.8rem;
+  }
+  .nav {
+    height: 5rem;
+    line-height: 5rem;
+  }
+  .nav-items a {
+    font-size: 1.5rem;
+    padding: 2.2rem 4.5rem;
+    letter-spacing: 3px;
+  }
+  section {
+    scroll-margin-top: 75px;
+  }
+  .header {
+    height: 500px;
+    background-image: url("../img/warsaw_1920.jpg");
+  }
+  .header-text img {
+    height: 200px;
+    width: 200px;
+    margin-left: 20%;
+    text-align: center;
+  }
+  .header-text h1 {
+    font-size: 4.2rem;
+  }
+  .header-text p {
+    font-size: 2.3rem;
+  }
+  .shadow {
+    width: 750px;
+    padding: 30px 100px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  .dropdown-btn {
+    padding: 12px;
+  }
+  .dropdown-box:hover button {
+    -webkit-transform: scale(1.12);
+            transform: scale(1.12);
+  }
+  .dropdown-btn i {
+    font-size: 3rem;
+  }
+  .dropdown-btn p {
+    font-size: 2rem;
+    margin-top: 9px;
+  }
+  .about-info,
+  .offers-info {
+    font-size: 1.7rem;
+  }
+  .info-list p {
+    font-size: 1.7rem;
+  }
+  .info-list {
+    width: 300px;
+  }
+  #ask-offer {
+    height: 530px;
+  }
+  #job {
+    height: 495px;
+  }
+  form {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 500px;
+  }
+  form p {
+    font-size: 1.5rem;
+  }
+  .footer-text {
+    font-size: 1.6rem;
+  }
+  form input {
+    font-size: 1.9rem;
+  }
+  form button {
+    font-size: 1.6rem;
+  }
+  form button {
+    position: relative;
+    left: 6%;
+  }
+  .contact h3 {
+    font-size: 1.9rem;
+  }
+  .offer-info {
+    width: 380px;
+    font-size: 1.7rem;
+  }
+  .info-list {
+    width: 350px;
   }
 }
 /*# sourceMappingURL=style.css.map */
