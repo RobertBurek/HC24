@@ -320,7 +320,7 @@ form p {
 
 form button {
   float: right;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-top: 30px;
   font-size: 1.1rem;
   font-weight: bold;
@@ -347,7 +347,7 @@ form div {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 80%;
+  width: 90%;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -458,7 +458,7 @@ input[type="file"]::file-selector-button:hover {
     margin-top: 40px;
   }
   form div p {
-    width: 35%;
+    width: 40%;
   }
   form div p:first-child {
     width: 65%;

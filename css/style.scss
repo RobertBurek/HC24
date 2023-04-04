@@ -294,7 +294,7 @@ form {
 	}
 	button {
 		float: right;
-		padding: 8px 12px;
+		padding: 6px 12px;
 		margin-top: 30px;
 		font-size: 1.1rem;
 		font-weight: bold;
@@ -313,7 +313,7 @@ form {
 	div {
 		display: flex;
 		flex-direction: row;
-		width: 80%;
+		width: 90%;
 		position: relative;
 		left: 50%;
 		transform: translateX(-50%);
@@ -448,7 +448,7 @@ input[type="file"]::file-selector-button:hover {
 		}
 		div {
 			p {
-				width: 35%;
+				width: 40%;
 			}
 			p:first-child {
 				width: 65%;
