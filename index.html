@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeCare24</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Alatsi&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <script src="https://kit.fontawesome.com/e5505724c8.js" crossorigin="anonymous"></script>
     <script>
         document.write('<link rel="stylesheet" href="css/style.css?ver=' + Math.floor(Math.random() * 1000) + '"\>');
@@ -36,55 +38,68 @@
             <h1>Home <span>Care 24</span></h1>
             <p>Obsługa techniczna nieruchomości</p>
             <!-- <p id="ekran"></p>
+            <script>
+                document.getElementById('ekran').innerHTML=' Ekran: '+window.innerWidth+'/'+window.innerHeight;
+            </script> -->
         </div>
-        <script>
-            document.getElementById('ekran').innerHTML=' Ekran: '+window.innerWidth+'/'+window.innerHeight;
-        </script> -->
+
     </header>
     <main>
         <section id="about" class="about-us container shadow">
             <h2 class="section-title">O nas</h2>
-            <!-- <p id="ekran2">
-
-            </p>
+            <!-- <p id="ekran2"></p>
             <script>
                 document.getElementById('ekran2').innerHTML=' Ekran: '+ document.getElementById('about-p1').documentElement.clientWidth +'/'+ document.getElementById('about-p1').documentElement.clientHeight;
             </script> -->
-            <p id="about-p1" class="about-info">
-                <!-- Już ponad 10 lat pracujemy w branży obsługi nieruchomości. Wieloletnie doświadczenia pozwoliły nam
-                bardzo gruntownie poznać potrzeby techniczne zarówno budynków mieszkalnych jak i biurowych. To
-                doświadczenie oraz wykwalifikowany personel techniczny są gwarancją najwyższej jakości naszych usług. -->
+            <p class="about-info">
+                Już ponad 10 lat pracujemy w branży obsługi nie&shy;ru&shy;cho&shy;mości. Wieloletnie doś&shy;wia&shyd&shy;cze&shy;nia
+                poz&shy;wo&shy;li&shy;ły nam bardzo grun&shy;tow&shy;nie poznać po&shy;trze&shy;by techniczne zarówno budynków
+                miesz&shy;kal&shy;nych jak i biurowych. To doświad&shy;cze&shy;nie oraz
+                wy&shy;kwa&shy;li&shy;fi&shy;ko&shy;wa&shy;ny per&shy;sonel techni&shy;czny są gwa&shy;ran&shy;cją
+                najwyższej jakości naszych usług.
             </p>
-            <!-- <p id="ekran2"></p>
-            <script>
-                var w = document.getElementById('about-p1').offsetWidth;
-                var h = document.getElementById('about-p1').offsetHeight;
-                document.getElementById('ekran2').innerHTML=' Ekran: '+ w +'/'+ h;
-            </script> -->
-            <p id="about-p2" class="about-info">
-                <!-- Optymalizujemy koszty, jesteśmy solidni i profesjonalni. W przypadku awarii działamy szybko i sprawnie.
-                Długotrwałą obsługę prowadzimy na podstawie planów napraw i konserwacji. Wykorzystując zespół
-                współpracujących z nami ekspertów wykonujemy modernizacje urządzeń i instalacji. -->
+
+            <p class="about-info">
+                Optymalizujemy koszty, jesteśmy solidni i pro&shy;fe&shy;sjo&shy;na&shy;lni. W przypadku awarii dzia&shy;ła&shy;my
+                szybko i sprawnie. Dłu&shy;go&shy;trwałą ob&shy;słu&shy;gę pro&shy;wa&shy;dzimy na podstawie pla&shy;nów napraw i
+                kon&shy;serwacji. Wykorzystując zes&shy;pół współ&shy;pra&shy;cu&shy;ją&shy;cych z nami eks&shy;per&shy;tów wykonujemy
+                mo&shy;der&shy;nizacje urządzeń i instalacji.
             </p>
-            <p id="about-p3" class="about-info">
-                <!-- Wykonujemy kontrole techniczne obiektów budowlanych (półroczne, roczne, pięcioletnie) we wszystkich
-                zakresach konstrukcyjnych i instalacyjnych. Wykonujemy kontrole gwarancyjne we wszystkich branżach. -->
+            <p class="about-info">
+                Wykonujemy kontrole techniczne obiektów budowla&shy;nych (półroczne, roczne, pięcioletnie) we wszystkich
+                zakresach konstrukcyjnych i instalacyjnych. Wy&shy;ko&shy;nu&shy;je&shy;my kontrole
+                gwa&shy;ran&shy;cyj&shy;ne we wszystkich branżach.
             </p>
-            <p id="about-p4" class="about-info">
-                <!-- Wspieramy Zarządców, Zarządy Wspólnot i Spółdzielni przygotowując opinie techniczne na potrzeby
-                dochodzenia roszczeń (opinie rzeczoznawców lub biegłych sądowych). -->
+            <p class="about-info">
+                Wspieramy Zarządców, Zarządy Wspólnot i Spółdziel&shy;ni przy&shy;go&shy;towując opinie techniczne na
+                potrzeby do&shy;cho&shy;dze&shy;nia roszczeń (opinie rze&shy;czo&shy;zna&shy;wców lub bie&shy;głych
+                są&shy;do&shy;wych).
             </p>
             <p class="about-info">
                 Zapraszamy do zapoznania się z naszą ofertą.<br>
                 Na życzenie przesyłamy referencje.
             </p>
+            <!-- <p id="ekran2" class="about-info"></p>
+            <script>
+                var e = document.getElementById('about-p1');
+                var w = document.getElementById('about-p1').offsetWidth;
+                var h = document.getElementById('about-p1').offsetHeight;
+                var wC = document.getElementById('about').offsetWidth;
+                var hC = document.getElementById('about').offsetHeight;
+                document.getElementById('ekran2').innerHTML=' P: '+ w +'/'+ h +'   C: ' + wC + '/' + hC;
+            </script> -->
         </section>
         <section id="offers" class="offers container shadow">
             <h2 class="section-title">Oferty</h2>
-            <p id="offers-p" class="offers-info">
+            <p class="offers-info">
+                Utrzymujemy sprawność techniczną obsłu&shy;gi&shy;wa&shy;nych nie&shy;ru&shy;chomości. Wspieramy naszych
+                kli&shy;en&shy;tów
                 <!-- Utrzymujemy sprawność techniczną obsługiwanych nieruchomości. Wspieramy naszych klientów  -->
-                <b>24 godziny na dobę.</b> 
-                    <!-- Przez prowadzenie kompleksowej konserwacji optymalizujemy koszty napraw i modernizacji.
+                <b>24 godziny na dobę.</b>
+                Przez pro&shy;wa&shy;dze&shy;nie kom&shy;plek&shy;so&shy;wej kon&shy;ser&shy;wacji optymalizujemy koszty
+                napraw i modernizacji. Służymy fa&shy;cho&shy;wym do&shy;radz&shy;twem, chętnie dzielimy się wiedzą i
+                źródłami dostaw w celu minimalizacji kosztów części zamiennych.
+                <!-- Przez prowadzenie kompleksowej konserwacji optymalizujemy koszty napraw i modernizacji.
                 Służymy
                 fachowym doradztwem, chętnie dzielimy się wiedzą i źródłami dostaw w celu minimalizacji kosztów części
                 zamiennych. -->
@@ -96,9 +111,9 @@
                         <p dropdown>Konserwacja budynku</p>
                     </button>
                     <div class="dropdown-info">
-                        <p id="offer-p1" class="offer-info">
-                            <!-- Prowadzimy kompleksowe usługi konserwacji budynków mieszkalnych, biurowych i technicznych w
-                            zakresie: -->
+                        <p class="offer-info">
+                            Prowadzimy kompleksowe usługi kon&shy;ser&shy;wa&shy;cji budynków miesz&shy;kal&shy;nych,
+                            biurowych i technicznych w za&shy;kre&shy;sie:
                         </p>
                         <div class="info-list">
                             <p>1. Prac budowlanych.</p>
@@ -110,9 +125,9 @@
                             <p>7. Instalacji teletechnicznych.</p>
                             <p>8. Instalacji przeciwpożarowych.</p>
                         </div>
-                        <p id="offer-p2" class="offer-info">
-                            <!-- W przypadku rozszerzonych potrzeb, remontujemy i modernizujemy budynki. Szczegółowy zakres
-                            prac wysyłamy na prośbę klientów. -->
+                        <p class="offer-info">
+                            W przypadku rozszerzonych po&shy;trzeb, remontujemy i mo&shy;der&shy;ni&shy;zu&shy;je&shy;my bu&shy;dyn&shy;ki. Szczegółowy za&shy;kres
+                            prac wy&shy;sy&shy;ła&shy;my na prośbę kli&shy;en&shy;tów.
                         </p>
                     </div>
                 </div>
@@ -122,9 +137,9 @@
                         <p dropdown>Przeglądy budowlane <br>i techniczne</p>
                     </button>
                     <div class="dropdown-info">
-                        <p id="offer-p3" class="offer-info">
-                            <!-- Wykonujemy wszystkie konieczne przeglądy wymagane przepisami prawa budowlanego.
-                            Przygotowujemy pełny plan kontroli technicznych. Przykładowe przeglądy i kontrole: -->
+                        <p class="offer-info">
+                            Wykonujemy wszystkie ko&shy;niecz&shy;ne prze&shy;glą&shy;dy wymagane prze&shy;pi&shy;sa&shy;mi pra&shy;wa budowlanego.
+                            Przy&shy;go&shy;to&shy;wu&shy;je&shy;my peł&shy;ny plan kontroli tech&shy;nicz&shy;nych. Przy&shy;kła&shy;do&shy;we prze&shy;glą&shy;dy i kon&shy;tro&shy;le:
                         </p>
                         <div class="info-list">
                             <p>1. Przeglądy budowlane.</p>
@@ -138,9 +153,9 @@
                             <p>9. Kontrole instalacji ochrony środowiska.</p>
                             <p>10. Kontrole systemów dozoru.</p>
                         </div>
-                        <p id="offer-p4" class="offer-info">
-                            <!-- W przypadku awarii wykonujemy badania specjalistycznym sprzętem: kamera termowizyjna, robot.
-                            Pełny zakres usług przesyłamy na życzenie klientów. -->
+                        <p class="offer-info">
+                            W przypadku awarii wykonujemy ba&shy;da&shy;nia specjalistycznym sprzę&shy;tem: ka&shy;me&shy;ra ter&shy;mo&shy;wi&shy;zyjna, ro&shy;bot.
+                            Pełny zakres usług przesyłamy na ży&shy;cze&shy;nie kli&shy;en&shy;tów.
                         </p>
                     </div>
                 </div>
@@ -150,10 +165,10 @@
                         <p dropdown>Pogotowie techniczne <br>i dokumentacja</p>
                     </button>
                     <div class="dropdown-info">
-                        <p id="offer-p5" class="offer-info">
-                            <!-- Prowadzimy całodobowe pogotowie techniczne.
-                            Wykonane prace takie jak konserwacja, przeglądy, kontrole, dokumentujemy w prowadzonych
-                            przez nas rejestrach na bieżąco dostępnych dla właścicieli i zarządców obiektów. -->
+                        <p class="offer-info">
+                            Prowadzimy całodobowe po&shy;go&shy;to&shy;wie tech&shy;ni&shy;czne.
+                            Wykonane prace takie jak konserwacja, prze&shy;glą&shy;dy, kon&shy;tro&shy;le, do&shy;ku&shy;men&shy;tujemy w pro&shy;wa&shy;dzo&shy;nych
+                            przez nas re&shy;jes&shy;trach na bie&shy;żą&shy;co dos&shy;tęp&shy;nych dla właś&shy;ci&shy;cie&shy;li i za&shy;rzą&shyd&shy;ców obiek&shy;tów.
                         </p>
                         <div class="info-list">
                         </div>
@@ -208,6 +223,10 @@
         <section id="job" class="job container shadow">
             <h2 class="section-title">Praca</h2>
             <p id="job-p1" class="offers-info">
+                Jesteś osobą, która jest fachowcem w wielu dziedzinach i poradzi sobie z różnymi napra&shy;wa&shy;mi. Na
+                war&shy;szaw&shy;skim rynku istnieje duże za&shy;po&shy;trze&shy;bo&shy;wa&shy;nie na usługi takich specjalistów. 
+                Szu&shy;kasz pracy w tym zawodzie lub chcesz dos&shy;ko&shy;na&shy;lić swoje umiejętności w jednej z naj&shy;bar&shy;dziej
+                roz&shy;poz&shy;na&shy;wa&shy;nych marek w tej branży usług, to napisz do nas.
                 <!-- Jesteś osobą, która jest fachowcem w wielu dziedzinach i poradzi sobie z różnymi
                 naprawami. Na warszawskim rynku istnieje duże zapotrzebowanie
                 na usługi takich specjalistów. Szukasz pracy w tym zawodzie lub chcesz doskonalić swoje umiejętności
