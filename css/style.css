@@ -469,7 +469,7 @@ input[type="file"]::file-selector-button:hover {
 
 @media (min-width: 500px) {
   .shadow {
-    width: 80%;
+    width: 70%;
     padding: 20px 50px;
   }
   .header {
@@ -508,7 +508,12 @@ input[type="file"]::file-selector-button:hover {
     margin-left: 15px;
   }
   .about-info {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   #job {
     height: 385px;
@@ -548,6 +553,9 @@ input[type="file"]::file-selector-button:hover {
   form button {
     position: relative;
     left: 4%;
+  }
+  .section-title {
+    font-size: 2.5rem;
   }
 }
 
@@ -617,6 +625,7 @@ input[type="file"]::file-selector-button:hover {
   .about-info,
   .offers-info {
     font-size: 1.7rem;
+    width: 100%;
   }
   .info-list li {
     font-size: 1.7rem;
@@ -649,9 +658,6 @@ input[type="file"]::file-selector-button:hover {
   }
   form button {
     font-size: 1.6rem;
-  }
-  form button {
-    left: 6%;
   }
   .contact h3 {
     font-size: 1.9rem;
