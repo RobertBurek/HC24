@@ -92,8 +92,8 @@ section {
 .header {
 	position: relative;
 	height: 250px;
-	background-image: url("../img/warsaw_640.jpg");
-	background-size: cover;
+	background-image: url("../img/warsaw_640_dark.jpg");
+	// background-size: cover;
 	background-position: center;
 }
 .header-text {
@@ -217,7 +217,7 @@ b {
 	cursor: pointer;
 }
 .dropdown-info {
-	padding: 10px 20px;
+	padding: 10px 15px;
 	display: flex;
 	flex-direction: column;
 	display: none;
@@ -231,14 +231,15 @@ b {
 	color: gray;
 }
 .info-list {
-	width: 144px;
+	// width: 144px;
 	margin-left: 6px;
 	text-align: left;
-	font-size: 0.7rem;
+	font-size: 0.95rem;
+	margin-left: 10px;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-	p {
+	li {
 		padding: 1px 0;
 	}
 }
@@ -373,6 +374,7 @@ input[type="file"]::file-selector-button:hover {
 /* footer */
 
 
+/************ RESPONZYWNOŚĆ *************/
 @media (min-width: 400px) {
 	.shadow {
 		width: 310px;
@@ -389,6 +391,9 @@ input[type="file"]::file-selector-button:hover {
 		margin-bottom: 15px;
 		text-align: justify;
 	}
+	// .info-list {
+	// 	font-size: 1rem;
+	// }
 	form {
 		button {
 			margin-top: 25px;
@@ -404,6 +409,11 @@ input[type="file"]::file-selector-button:hover {
 	}
 }
 
+@media (min-width: 450px) {
+	.info-list {
+		font-size: 1rem;
+	}
+}
 
 @media (min-width: 500px) {
 	.shadow {
@@ -431,7 +441,7 @@ input[type="file"]::file-selector-button:hover {
 	// }
 	.header {
 		height: 400px;
-		background-image: url("../img/warsaw_1920.jpg");
+		// background-image: url("../img/warsaw_1920_dark.jpg");
 	}
 	.header-text img {
 		height: 150px;
@@ -458,16 +468,24 @@ input[type="file"]::file-selector-button:hover {
 	}
 	.info-list {
 		width: 205px;
-		font-size: 1rem;
+		// font-size: 1rem;
+		font-size: 1.2rem;
 		padding-top: 2px;
+		li {
+			padding: 1px 0;
+			margin-left: 15px;
+		}
 	}
-	.about-info,
-	.offers-info {
+	.about-info {
 		font-size: 1.2rem;
 	}
-	.info-list p {
-		padding: 2px 0;
-	}
+	// .info-list p {
+	// 	padding: 2px 0;
+	// }
+	// .info-list li {
+	// 	padding: 1px 0;
+	// 	margin-left: 26px;
+	// }
 
 	#job {
 		height: 385px;
@@ -507,11 +525,9 @@ input[type="file"]::file-selector-button:hover {
 	}
 }
 
-
 // @media (min-width: 768px) {
 
 // }
-
 
 @media (min-width: 992px) {
 	.logo-picture {
@@ -534,17 +550,30 @@ input[type="file"]::file-selector-button:hover {
 		scroll-margin-top: $height-nav * 2.5 + $container-margin;
 	}
 	.header {
-		height: 500px;
-		background-image: url("../img/warsaw_1920.jpg");
+		height: 100vh;
+		background-image: url("../img/warsaw_4329_dark.jpg");
+		background-size: cover;
+		// opacity: 60%;
 	}
+	.header-text {
+		top: 40%;
+		left: 55%;
+		// position: relative;
+		// left: 50%;
+		// top: 50%;
+		// transform: translate(-50%, -50%);
+	  }
 	.header-text img {
-		height: 200px;
-		width: 200px;
-		margin-left: 20%;
+		height: 300px;
+		width: 300px;
+		margin-left: 20px;
 		text-align: center;
+		// position: relative;
+		// left: 50%;
+		// transform: translateX(-50%);
 	}
 	.header-text h1 {
-		font-size: 4.2rem;
+		font-size: 6.2rem;
 	}
 	.header-text p {
 		font-size: 2.3rem;
@@ -570,15 +599,19 @@ input[type="file"]::file-selector-button:hover {
 		font-size: 2rem;
 		margin-top: 9px;
 	}
-	.about-info, 
+	.about-info,
 	.offers-info {
 		font-size: 1.7rem;
 	}
-	.info-list p {
+	// .info-list p {
+	// 	font-size: 1.7rem;
+	// }
+	.info-list li {
 		font-size: 1.7rem;
+		margin-left: ;
 	}
 	.info-list {
-		width: 300px;
+		width: 350px;
 	}
 	#ask-offer {
 		height: 530px;
@@ -614,9 +647,6 @@ input[type="file"]::file-selector-button:hover {
 	.offer-info {
 		width: 380px;
 		font-size: 1.7rem;
-	}
-	.info-list {
-		width: 350px;
 	}
 }
 
